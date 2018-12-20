@@ -1,0 +1,24 @@
+@import "../color";
+
+header {
+  .header-topbar {
+    background-color: $headerColor;
+    color: white;
+    font-size: 30px;
+  }
+
+  .header-secondbar {
+    color: $fontColor;
+    .header-secondbar-title{
+      font-size: 30px;
+    }
+
+    .header-secondbar-links {
+      font-size: 20px;
+    }
+  }
+  .header-breadcrumb {
+    border-bottom: thin solid $lineColor;
+    border-top: thin solid $lineColor;
+  }
+}

@@ -1,20 +1,20 @@
 <template>
   <ul class="breadcrumb-ul">
-    <li class="breadcrumb-ul">
+    <li class="breadcrumb-li">
       <nuxt-link
         to="/"
-        class="breadcrumb-ul-links-home">
+        class="breadcrumb-li-links-home">
         <img src="../assets/home.png">
       </nuxt-link>
     </li>
     <li
       v-for="(crumb, index) in breadcrumbs" 
       :key="index"
-      class="breadcrumb-ul">
+      class="breadcrumb-li">
       <span v-if="crumb.path">
         <nuxt-link
           to="crumb.path"
-          class="breadcrumb-ul-links">{{ crumb.name }}</nuxt-link>
+          class="breadcrumb-li-links">{{ crumb.name }}</nuxt-link>
       </span>
     </li>
   </ul>
@@ -32,5 +32,5 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped src='../style/header/style.scss'>
 </style>

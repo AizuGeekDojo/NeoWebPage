@@ -7,7 +7,7 @@
       <div>
         <a href="http://www.u-aizu.ac.jp/">会津大学公式サイト</a>
       </div>
-      <div>English</div>
+      <div class="header-topbar-english">English</div>
     </div>
     <div class="header-secondbar">
       <div class="header-secondbar-logo">
@@ -47,5 +47,5 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" src="../style/header/style.scss" scoped>
 </style>
