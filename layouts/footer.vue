@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div>GeekWebPageFooter</div>
+    <div>Footer</div>
   </footer>
 </template>
 
