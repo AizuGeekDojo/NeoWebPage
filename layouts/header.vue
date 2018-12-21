@@ -16,7 +16,7 @@
       <div class="header-secondbar-title">Aizu Geek Dojo</div>
       <div class="header-secondbar-links">
         <div class="header-secondbar-link">
-          <nuxt-link to="/zaisitu">SA在室日程</nuxt-link>
+          <nuxt-link to="/opentime">SA在室日程</nuxt-link>
         </div>
         <div
           class="header-secondbar-link">
