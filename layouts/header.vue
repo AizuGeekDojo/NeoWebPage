@@ -23,7 +23,7 @@
           <nuxt-link to="/about">AizuGeekDojoについて</nuxt-link>
         </div>
         <div class="header-secondbar-link">
-          <nuxt-link to="/youtube">Youtube</nuxt-link>
+          <a href="https://www.youtube.com/user/univaizu">Youtube</a>
         </div>
         <div class="header-secondbar-link">
           <nuxt-link to="/kousyukai">講習会について</nuxt-link>
