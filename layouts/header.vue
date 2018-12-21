@@ -15,10 +15,19 @@
       </div>
       <div class="header-secondbar-title">Aizu Geek Dojo</div>
       <div class="header-secondbar-links">
-        <div class="header-secondbar-link">SA在室日程</div>
-        <div class="header-secondbar-link">AizuGeekDojoについて</div>
-        <div class="header-secondbar-link">Youtube</div>
-        <div class="header-secondbar-link">講習会について</div>
+        <div class="header-secondbar-link">
+          <nuxt-link to="/zaisitu">SA在室日程</nuxt-link>
+        </div>
+        <div
+          class="header-secondbar-link">
+          <nuxt-link to="/about">AizuGeekDojoについて</nuxt-link>
+        </div>
+        <div class="header-secondbar-link">
+          <nuxt-link to="/youtube">Youtube</nuxt-link>
+        </div>
+        <div class="header-secondbar-link">
+          <nuxt-link to="/kousyukai">講習会について</nuxt-link>
+        </div>
       </div>
     </div>
     <div class="header-breadcrumb">

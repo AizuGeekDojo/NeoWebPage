@@ -39,6 +39,13 @@ header {
 
     .header-secondbar-links {
       font-size: 20px;
+
+      .header-secondbar-link {
+        a, a:visited {
+          text-decoration: none;
+          color: $fontColor;
+        }
+      }
     }
   }
   .header-breadcrumb {
