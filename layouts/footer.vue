@@ -1,6 +1,8 @@
 <template>
   <footer>
-    <div>Footer</div>
+    <div class="footer-bar">
+      <img src="../assets/uaizu.png">
+    </div>
   </footer>
 </template>
 
@@ -8,5 +10,5 @@
 export default {}
 </script>
 
-<style>
+<style lang="scss" src='../style/footer/style.scss' scoped>
 </style>
