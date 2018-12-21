@@ -5,6 +5,30 @@ header {
     background-color: $headerColor;
     color: white;
     font-size: 30px;
+
+    .header-topbar-home {
+      color:  white;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    .header-topbar-u-aizu{
+      color: white;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:visited {
+        text-decoration: none;
+        color: white;
+      }
+    }
   }
 
   .header-secondbar {
@@ -20,5 +44,19 @@ header {
   .header-breadcrumb {
     border-bottom: thin solid $lineColor;
     border-top: thin solid $lineColor;
+    .breadcrumb-ul {
+      .breadcrumb-li{
+        a, a:visited {
+          color: $fontColor;
+          text-decoration: none;
+        }
+        span {
+          a, a:visited {
+            color: $fontColor;
+            text-decoration: none;
+          }
+        }
+      }
+    }
   }
 }

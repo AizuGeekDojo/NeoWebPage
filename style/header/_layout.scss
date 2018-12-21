@@ -80,6 +80,7 @@ header {
           display: inline-block;
           align-items: center;
           margin-left: 50px;
+          font-weight: 10px;
           font-size: 50px;
         }
         .breadcrumb-li-links {
@@ -88,6 +89,7 @@ header {
         .breadcrumb-li-links:after {
           content: '|';
           display: inline-block;
+          margin: 0 auto;
         }
         .breadcrumb-li-links:last-child:after {
           content: none;

@@ -4,7 +4,7 @@
       <div class="header-topbar-home">
         <nuxt-link to="/">ホーム</nuxt-link>
       </div>
-      <div>
+      <div class="header-topbar-u-aizu">
         <a href="http://www.u-aizu.ac.jp/">会津大学公式サイト</a>
       </div>
       <div class="header-topbar-english">English</div>
