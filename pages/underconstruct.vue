@@ -7,7 +7,21 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data: function() {
+    return {
+      breadcrumbs: [
+        {
+          name: 'Underconstruct',
+          path: '/underconstruct'
+        }
+      ]
+    }
+  },
+  created: function() {
+    this.$store.commit('change_page', this.breadcrumbs)
+  }
+}
 </script>
 
 <style lang="scss" src='../style/page/underconstruct/style.scss' scoped>

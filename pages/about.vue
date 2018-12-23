@@ -10,7 +10,21 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data: function() {
+    return {
+      breadcrumbs: [
+        {
+          name: 'about',
+          path: '/about'
+        }
+      ]
+    }
+  },
+  created: function() {
+    this.$store.commit('change_page', this.breadcrumbs)
+  }
+}
 </script>
 
 <style lang="scss" src="../style/page/about/style.scss" scoped>

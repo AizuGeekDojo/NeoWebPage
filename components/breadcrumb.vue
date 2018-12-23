@@ -13,7 +13,7 @@
       class="breadcrumb-li">
       <span v-if="crumb.path">
         <nuxt-link
-          to="crumb.path"
+          :to="crumb.path"
           class="breadcrumb-li-links">{{ crumb.name }}</nuxt-link>
       </span>
     </li>
