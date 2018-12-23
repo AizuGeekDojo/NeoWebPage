@@ -23,7 +23,14 @@
 
 <script>
 export default {
-  components: {}
+  data: function() {
+    return {
+      breadcrumbs: [{}]
+    }
+  },
+  created: function() {
+    this.$store.commit('change_page', this.breadcrumbs)
+  }
 }
 </script>
 

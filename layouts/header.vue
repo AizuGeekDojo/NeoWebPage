@@ -65,20 +65,15 @@ export default {
   data: function() {
     return {
       // TODO パンくずリストのデーターをpagesから伝播するようにする
-      breadcrumbs: [
-        {
-          name: 'テスト',
-          path: '/'
-        }
-      ],
+      // breadcrumbs: [{}],
       select_lang: default_lang,
       ja: 'ja',
       en: 'en'
     }
   },
-  watch: {
-    select_lang: function(v) {
-      this.$store.commit('change_lang')
+  computed: {
+    breadcrumbs: function() {
+      return this.$store.state.breadcrumb_state
     }
   },
   methods: {

@@ -36,6 +36,9 @@ export default {
         }
       ]
     }
+  },
+  created: function() {
+    this.$store.commit('change_page', this.breadcrumbs)
   }
 }
 </script>
