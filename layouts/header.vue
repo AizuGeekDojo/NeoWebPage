@@ -7,7 +7,15 @@
       <div class="header-topbar-u-aizu">
         <a href="http://www.u-aizu.ac.jp/">会津大学公式サイト</a>
       </div>
-      <div class="header-topbar-english">English</div>
+      <div
+        v-if="select_lang === ja"
+        class="header-topbar-english"
+        @click="changeLang" >English</div>
+      <div 
+        v-else
+        class="header-topbar-english"
+        @click="changeLang" >
+        日本語</div>
     </div>
     <div class="header-secondbar">
       <div class="header-secondbar-logo">
@@ -37,6 +45,18 @@
 </template>
 
 <script>
+let default_lang = 'ja'
+if (process.client) {
+  default_lang =
+    (
+      window.navigator.userLanguage ||
+      window.navigator.language ||
+      window.navigator.browserLanguage
+    ).substr(0, 2) == 'ja'
+      ? 'ja'
+      : 'en'
+}
+
 import breadcrumb from '../components/breadcrumb'
 export default {
   components: {
@@ -50,7 +70,24 @@ export default {
           name: 'テスト',
           path: '/'
         }
-      ]
+      ],
+      select_lang: default_lang,
+      ja: 'ja',
+      en: 'en'
+    }
+  },
+  watch: {
+    select_lang: function(v) {
+      this.$store.commit('change_lang')
+    }
+  },
+  methods: {
+    changeLang: function() {
+      if (this.select_lang == 'ja') {
+        this.select_lang = 'en'
+      } else {
+        this.select_lang = 'ja'
+      }
     }
   }
 }
