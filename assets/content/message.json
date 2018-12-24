@@ -1,0 +1,20 @@
+{
+  "ja": {
+    "index": {
+      "top-about": {
+        "h3": "なにができる施設?",
+        "h6-1": "3Dプリンターやレーザーカッターが使えます。",
+        "h6-2": "いろいろな開発をしています。"
+      }
+    }
+  },
+  "en": {
+    "index": {
+      "top-about": {
+        "h3": "What can in this institution",
+        "h6-1": "You can use 3Dprinter, leaser cutter...",
+        "h6-2": "hogehoge fugafuga"
+      }
+    }
+  }
+}

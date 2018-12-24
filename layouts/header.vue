@@ -83,6 +83,7 @@ export default {
       } else {
         this.select_lang = 'ja'
       }
+      this.$store.commit('change_lang', this.select_lang)
     }
   }
 }

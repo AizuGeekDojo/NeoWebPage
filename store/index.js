@@ -1,10 +1,8 @@
 import Vuex from 'vuex'
 
 // TODO messageを保持したjsonを読み込むようにする
-let text_json = {
-  ja: {},
-  en: {}
-}
+import text_json from '../assets/content/message.json'
+console.log(text_json)
 
 const Store = () => {
   return new Vuex.Store({

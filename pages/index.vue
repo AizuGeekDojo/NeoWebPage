@@ -4,9 +4,9 @@
       content
     </div>
     <div class="top-about">
-      <h3>何ができる施設？</h3>
-      <h6>3Dプリンターやレーザーカッターが扱えます</h6>
-      <h6>いろんな開発をしています。</h6>
+      <h3>{{ text.index["top-about"]["h3"] }}</h3>
+      <h6>{{ text.index["top-about"]["h6-1"] }}</h6>
+      <h6>{{ text.index["top-about"]["h6-2"] }}</h6>
     </div>
     <bannner/>
   </div>
@@ -21,6 +21,11 @@ export default {
   data: function() {
     return {
       breadcrumbs: [{}]
+    }
+  },
+  computed: {
+    text: function() {
+      return this.$store.state.text
     }
   },
   created: function() {
