@@ -1,8 +1,12 @@
 <template>
-  <div>
+  <div class="container">
     <header-component/>
-    <nuxt/>
-    <footer-component/>
+    <div class="contents">
+      <nuxt/>
+    </div>
+    <div class="footer">
+      <footer-component/>
+    </div>
   </div>
 </template>
 

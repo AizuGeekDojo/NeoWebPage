@@ -1,5 +1,13 @@
 <template>
   <div class="top">
+    <div class="top-img"><!-- TODO 画像を差し替え　 -->
+      content
+    </div>
+    <div class="top-about">
+      <h3>何ができる施設？</h3>
+      <h6>3Dプリンターやレーザーカッターが扱えます</h6>
+      <h6>いろんな開発をしています。</h6>
+    </div>
     <bannner/>
   </div>
 </template>
@@ -21,33 +29,5 @@ export default {
 }
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+<style lang="scss" src="../style/page/index/style.scss" scoped>
 </style>
