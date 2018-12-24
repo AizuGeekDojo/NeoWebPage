@@ -1,0 +1,13 @@
+.banner {
+  .banner-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    .banner-li {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+}
