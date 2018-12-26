@@ -19,7 +19,7 @@ html {
 .container {
   width: 100%;
   position: relative;
-  // h: auto !important;
+  h: auto !important;
   height: 100%;
   min-height: 100%;
   .contents {
@@ -31,6 +31,27 @@ html {
     bottom: 0;
     width: 100%;
     height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .big {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .small {
+    display: none;
+  }
+}
+
+.default {
+  height: 100%;
+  width: 100%;
+  .small {
+    height: 100%;
+    width: 100%;
   }
 }
 
