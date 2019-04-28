@@ -4,7 +4,7 @@ header {
   .header-topbar {
     background-color: $headerColor;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 
     .header-topbar-home {
       color:  white;
@@ -34,7 +34,8 @@ header {
   .header-secondbar {
     color: $fontColor;
     .header-secondbar-title{
-      font-size: 30px;
+      color: $fontImpactColor;
+      font-size: 20px;
     }
 
     .header-secondbar-links {

@@ -6,13 +6,13 @@ header {
     flex-direction: row;
     align-items: center;
     position: relative;
-    height: 63px;
+    height: 50px;
     width: 100%;
 
     .header-topbar-home {
       margin-left: 30px;
       margin-right: 50px;
-      font-size: 30px;
+      font-size: 25px;
     }
   }
 
@@ -20,11 +20,12 @@ header {
     margin-left: 10px;
     margin-right: 10px;
     position: absolute;
+    font-size: 20px;
     right: 0;
   }
 
   .header-secondbar {
-    height: 135px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -36,8 +37,8 @@ header {
       margin-left: 30px;
       margin-right: 30px;
       img {
-        width: 77px;
-        height: 77px;
+        width: 56px;
+        height: 56px;
       }
     }
     .header-secondbar-title {
@@ -56,22 +57,24 @@ header {
     }
   }
   .header-breadcrumb {
+    height: 50px;
     .breadcrumb-ul {
       display: flex;
       flex-direction: row;
       align-items: center;
       position: relative;
-      
+      height: 20px;
       .breadcrumb-li {
         display: flex;
         align-items: center;
         margin-right: 30px;
         margin-left: 30px;
         list-style: none;
+        font-size: 22px;
         .breadcrumb-li-links-home {
           img{
-            height: 44px;
-            width: 44px;
+            height: 22px;
+            width: 22px;
           }
         }
         .breadcrumb-li-links-home:after{
@@ -79,19 +82,10 @@ header {
           display: inline-block;
           align-items: center;
           margin-left: 50px;
-          font-weight: 10px;
-          font-size: 50px;
+          font-size: 22px;
         }
         .breadcrumb-li-links {
-          font-size: 30px;
-        }
-        .breadcrumb-li-links:after {
-          content: '|';
-          display: inline-block;
-          align-items: center;
-          margin-left: 50px;
-          font-weight: 10px;
-          font-size: 50px;
+          font-size: 22px;
         }
         .breadcrumb-li-links:last-child:after {
           content: none;
