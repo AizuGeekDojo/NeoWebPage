@@ -10,15 +10,15 @@
       <div class="header-topbar-youtube">
         <a href="https://www.youtube.com/user/univaizu">Youtube</a>
       </div>
-      <div
-        v-if="select_lang === ja"
-        class="header-topbar-english"
-        @click="changeLang" >English</div>
-      <div 
-        v-else
-        class="header-topbar-english"
-        @click="changeLang" >
-        日本語</div>
+      <!--<div-->
+      <!--v-if="select_lang === ja"-->
+      <!--class="header-topbar-english"-->
+      <!--@click="changeLang" >English</div>-->
+      <!--<div -->
+      <!--v-else-->
+      <!--class="header-topbar-english"-->
+      <!--@click="changeLang" >-->
+      <!--日本語</div>-->
     </div>
     <div class="header-secondbar">
       <div class="header-secondbar-logo">
@@ -26,7 +26,7 @@
       </div>
       <div class="header-secondbar-links">
         <div class="header-secondbar-link">
-          <nuxt-link to="/opentime">SA在室日程</nuxt-link>
+          <nuxt-link to="/opentime">開室日程</nuxt-link>
         </div>
         <div
           class="header-secondbar-link">

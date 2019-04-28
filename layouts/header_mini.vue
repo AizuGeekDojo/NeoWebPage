@@ -21,7 +21,7 @@
       v-if="isMenu"
       class="header-mini-dropdown-menu">
       <nuxt-link to="/">ホーム</nuxt-link>
-      <nuxt-link to="/opentime">SA材質日程</nuxt-link>
+      <nuxt-link to="/opentime">開室日程</nuxt-link>
       <nuxt-link to="about">About</nuxt-link>
       <a href="https://www.youtube.com/user/univaizu">Youtube</a>
       <nuxt-link to="underconstruct">講習会</nuxt-link>

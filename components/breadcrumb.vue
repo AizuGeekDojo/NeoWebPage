@@ -26,7 +26,7 @@ export default {
     breadcrumbs: {
       type: Array,
       required: false,
-      default: () => [{ name: 'test', path: '/' }]
+      default: () => [{ name: '', path: '/' }]
     }
   }
 }

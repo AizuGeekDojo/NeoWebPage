@@ -8,7 +8,7 @@
       <p>是非お気軽にお立ち寄りください。</p>
     </div>
     <div class="photo">
-      <img src="../assets/images/geekdojo1.png">
+      <img src="../../assets/images/geekdojo1.png">
     </div>
   </div>
 </template>
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../style/color';
+@import '../../style/color';
 .about {
   font-size: 20px;
   color: $fontColor;
