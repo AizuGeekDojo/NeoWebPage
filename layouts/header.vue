@@ -2,10 +2,13 @@
   <header>
     <div class="header-topbar">
       <div class="header-topbar-home">
-        <nuxt-link to="/">ホーム</nuxt-link>
+        <nuxt-link to="/">Aizu Geek Dojo</nuxt-link>
       </div>
       <div class="header-topbar-u-aizu">
         <a href="http://www.u-aizu.ac.jp/">会津大学公式サイト</a>
+      </div>
+      <div class="header-topbar-youtube">
+        <a href="https://www.youtube.com/user/univaizu">Youtube</a>
       </div>
       <div
         v-if="select_lang === ja"
@@ -21,7 +24,6 @@
       <div class="header-secondbar-logo">
         <img src="../assets/logo.png">
       </div>
-      <div class="header-secondbar-title">Aizu Geek Dojo</div>
       <div class="header-secondbar-links">
         <div class="header-secondbar-link">
           <nuxt-link to="/opentime">SA在室日程</nuxt-link>
@@ -31,7 +33,7 @@
           <nuxt-link to="/about">AizuGeekDojoについて</nuxt-link>
         </div>
         <div class="header-secondbar-link">
-          <a href="https://www.youtube.com/user/univaizu">Youtube</a>
+          <nuxt-link to="/product">制作物</nuxt-link>
         </div>
         <div class="header-secondbar-link">
           <nuxt-link to="/underconstruct">講習会について</nuxt-link>
