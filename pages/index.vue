@@ -1,7 +1,7 @@
 <template>
   <div class="top">
     <div class="top-img"><!-- TODO 画像を差し替え　 -->
-      content
+      <img src="../assets/images/geekdojo1.png">
     </div>
     <div class="top-about">
       <h3>{{ text.index["top-about"]["h3"] }}</h3>
@@ -34,5 +34,25 @@ export default {
 }
 </script>
 
-<style lang="scss" src="../style/page/index/style.scss" scoped>
+<style lang="scss" scoped>
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .top-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-img {
+    width: 80%;
+    height: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
 </style>
