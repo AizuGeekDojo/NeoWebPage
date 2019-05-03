@@ -49,8 +49,6 @@ export default {
     align-items: center;
   }
   .top-img {
-    width: 80%;
-    height: 600px;
     margin-top: 30px;
     margin-bottom: 30px;
   }

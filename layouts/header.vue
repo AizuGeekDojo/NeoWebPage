@@ -36,7 +36,10 @@
           <nuxt-link to="/product">制作物</nuxt-link>
         </div>
         <div class="header-secondbar-link">
-          <nuxt-link to="/underconstruct">講習会について</nuxt-link>
+          <nuxt-link to="/items">備品</nuxt-link>
+        </div>
+        <div class="header-secondbar-link">
+          <nuxt-link to="/instraction">講習会について</nuxt-link>
         </div>
       </div>
     </div>
@@ -54,7 +57,7 @@ if (process.client) {
       window.navigator.userLanguage ||
       window.navigator.language ||
       window.navigator.browserLanguage
-    ).substr(0, 2) == 'ja'
+    ).substr(0, 2) === 'ja'
       ? 'ja'
       : 'en'
 }

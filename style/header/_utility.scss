@@ -8,6 +8,7 @@ header {
 
     .header-topbar-home {
       color:  white;
+      text-shadow: 0px 1px 1px #797a77;
       a {
         color: white;
         text-decoration: none;
@@ -34,12 +35,13 @@ header {
   .header-secondbar {
     color: $fontColor;
     .header-secondbar-title{
-      color: $fontImpactColor;
+      color: $fontColor;
       font-size: 20px;
     }
 
     .header-secondbar-links {
       font-size: 20px;
+      color: $fontColor;
 
       .header-secondbar-link {
         a, a:visited {
