@@ -5,16 +5,7 @@
         src="../assets/logo.png"
         class="header-mini-logo">
       <div class="header-mini-title">Aizu Geek Dojo</div>
-      <img 
-        v-if="!isMenu"
-        src="../assets/hanberguer_menu.png"
-        class="header-mini-menu"
-        @click="menu">
-      <img 
-        v-if="isMenu"
-        src="../assets/hanberguer_close.png"
-        class="header-mini-menu"
-        @click="menu"> 
+      <hamburger-menu />
     </div>
     
     <div
@@ -30,7 +21,11 @@
 </template>
 
 <script>
+import hamburguer_menu from '../components/hamburger-menu'
 export default {
+  components: {
+    'hamburger-menu': hamburguer_menu
+  },
   data: function() {
     return {
       isMenu: false

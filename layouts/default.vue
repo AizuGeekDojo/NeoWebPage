@@ -37,3 +37,7 @@ export default {
 
 <style lang='scss' src='../style/foundation.scss'>
 </style>
+
+<styel lang='scss' scoped>
+
+</styel>
