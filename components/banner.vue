@@ -29,5 +29,36 @@
 export default {}
 </script>
 
-<style lang="scss" src="../style/component/banner/style.scss" scoped>
+<style lang="scss" scoped>
+@import '../style/color';
+.banner {
+  @media (min-width: 600px) {
+    .banner-ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+
+      .banner-li {
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .banner-ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      list-style: none;
+      flex-direction: column;
+      padding-left: 0px;
+      padding-right: 0px;
+      .banner-li {
+      }
+    }
+  }
+}
 </style>

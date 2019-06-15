@@ -22,7 +22,7 @@
     </div>
     <div class="header-secondbar">
       <div class="header-secondbar-logo">
-        <img src="../assets/logo.png">
+        <a href="/"><img src="../assets/logo.png"></a>
       </div>
       <div class="header-secondbar-links">
         <div class="header-secondbar-link">
@@ -94,5 +94,151 @@ export default {
 }
 </script>
 
-<style lang="scss" src="../style/header/style.scss" scoped>
+<style lang="scss" scoped>
+header {
+  width: 100%;
+
+  .header-topbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+
+    .header-topbar-home {
+      margin-left: 30px;
+      margin-right: 50px;
+      font-size: 25px;
+      a {
+        margin-left: 15px;
+        margin-right: 15px;
+        color: white;
+        text-decoration: none;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    .header-topbar-youtube {
+      a {
+        margin-left: 15px;
+        margin-right: 15px;
+        color: white;
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+  .header-topbar-english {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: absolute;
+    font-size: 20px;
+    right: 0;
+  }
+
+  .header-secondbar {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-left: 50px;
+    justify-content: center;
+
+    .header-secondbar-logo {
+      margin-left: 30px;
+      margin-right: 30px;
+      img {
+        width: 56px;
+        height: 56px;
+      }
+    }
+    .header-secondbar-title {
+      margin-right: 20px;
+    }
+    .header-secondbar-links {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      .header-secondbar-link {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .header-breadcrumb {
+    height: 50px;
+  }
+}
+@import '../style/color';
+
+header {
+  .header-topbar {
+    background-color: $headerColor;
+    color: white;
+    font-size: 20px;
+
+    .header-topbar-home {
+      color: white;
+      text-shadow: 0px 1px 1px #797a77;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    .header-topbar-u-aizu {
+      color: white;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:visited {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+  .header-secondbar {
+    color: $fontColor;
+    .header-secondbar-title {
+      color: $fontColor;
+      font-size: 20px;
+    }
+
+    .header-secondbar-links {
+      font-size: 20px;
+      color: $fontColor;
+
+      .header-secondbar-link {
+        a,
+        a:visited {
+          text-decoration: none;
+          color: $fontColor;
+        }
+      }
+    }
+  }
+  .header-breadcrumb {
+    border-bottom: thin solid $lineColor;
+    border-top: thin solid $lineColor;
+  }
+}
 </style>

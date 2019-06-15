@@ -10,5 +10,27 @@
 export default {}
 </script>
 
-<style lang="scss" src='../style/footer_mini/style.scss' scoped>
+<style lang="scss" scoped>
+footer {
+  width: 100%;
+
+  .footer-bar {
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+    img {
+      margin-left: 30px;
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+@import '../style/color';
+
+footer {
+  .footer-bar {
+    background-color: $footerColor;
+  }
+}
 </style>

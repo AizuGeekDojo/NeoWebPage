@@ -44,5 +44,82 @@ export default {
 }
 </script>
 
-<style lang="scss" src="../style/header_mini/style.scss" scoped>
+<style lang="scss" scoped>
+@import '../style/color';
+
+.header-mini {
+  .header-mini-topbar {
+    background-color: $headerColor;
+    .header-mini-logo {
+      border-style: solid;
+      border-width: thin;
+      border-color: white;
+    }
+
+    .header-mini-title {
+      color: white;
+      font-weight: bold;
+    }
+  }
+  .header-mini-dropdown-menu {
+    background-color: #58341a;
+    opacity: 0.5;
+    color: white;
+    font-weight: bold;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+.header-mini {
+  // height: 100%;
+  .header-mini-topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 63px;
+    .header-mini-logo {
+      margin-left: 15px;
+      height: 40px;
+      width: 40px;
+    }
+    .header-mini-title {
+      flex-grow: 2;
+      width: 50%;
+      font-size: 15px;
+    }
+    .header-mini-menu {
+      margin-right: 15px;
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .header-mini-dropdown-menu {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    a {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+  }
+}
 </style>

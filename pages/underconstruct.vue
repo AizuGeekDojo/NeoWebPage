@@ -24,5 +24,19 @@ export default {
 }
 </script>
 
-<style lang="scss" src='../style/page/underconstruct/style.scss' scoped>
+<style lang="scss" scoped>
+@import '../style/color';
+.underconstruct {
+  font-size: 50px;
+  color: $fontColor;
+}
+.underconstruct {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 </style>
