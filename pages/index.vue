@@ -1,7 +1,7 @@
 <template>
   <div class="top">
     <div class="top-img"><!-- TODO 画像を差し替え　 -->
-      <img src="../assets/images/geekdojo1.png">
+      <img src="../assets/images/introduce/image1.jpg">
     </div>
     <div class="top-about">
       <h3>{{ text.index["top-about"]["h3"] }}</h3>
@@ -49,8 +49,25 @@ export default {
     align-items: center;
   }
   .top-img {
+    text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 600px) {
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 </style>

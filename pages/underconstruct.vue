@@ -1,7 +1,7 @@
 <template>
   <div class="underconstruct">
     <img src="../assets/trianglecond.png">
-    <span>準備中です。</span>
+    <span>現在準備中です</span>
     <img src="../assets/trianglecond.png">
   </div>
 </template>
@@ -27,10 +27,8 @@ export default {
 <style lang="scss" scoped>
 @import '../style/color';
 .underconstruct {
-  font-size: 50px;
+  font-size: 30px;
   color: $fontColor;
-}
-.underconstruct {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -38,5 +36,21 @@ export default {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .underconstruct {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 50px;
+      height: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    span {
+      font-size: 20px;
+    }
+  }
 }
 </style>

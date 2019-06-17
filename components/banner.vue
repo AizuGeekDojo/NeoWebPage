@@ -32,10 +32,9 @@ export default {}
 <style lang="scss" scoped>
 @import '../style/color';
 .banner {
-  @media (min-width: 600px) {
+  @media (min-width: 1400px) {
     .banner-ul {
       display: flex;
-      justify-content: center;
       align-items: center;
       list-style: none;
 
@@ -46,7 +45,7 @@ export default {}
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 1400px) {
     .banner-ul {
       display: flex;
       justify-content: center;
