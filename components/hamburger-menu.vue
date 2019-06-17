@@ -12,7 +12,7 @@
     <div
       v-if="isClick"
       class="close"
-      @click="close_hamburger"
+      @click="click_hamburger"
     >
       <span></span>
       <span></span>
@@ -28,10 +28,8 @@ export default {
   },
   methods: {
     click_hamburger() {
-      this.isClick = true
-    },
-    close_hamburger() {
-      this.isClick = false
+      this.isClick = !this.isClick
+      this.$emit('close-sender')
     }
   }
 }

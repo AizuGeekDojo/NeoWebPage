@@ -5,7 +5,7 @@
         src="../assets/logo.png"
         class="header-mini-logo">
       <div class="header-mini-title">Aizu Geek Dojo</div>
-      <hamburger-menu />
+      <hamburger-menu @close-sender="menu" />
     </div>
     
     <div
