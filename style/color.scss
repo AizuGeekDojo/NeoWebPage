@@ -1,4 +1,56 @@
-$headerColor:#E68E50;
-$footerColor:#F5B78C;
-$fontColor: rgba(0, 0, 0, 0.87);
-$lineColor: #707070;
+$headerColor:#533840;
+$footerColor:#533840;
+$mainColor1:#00a5b1;
+$mainColor2: #d66c2f;
+$mainColor3: #e7ad6f;
+$subColor1: #93d1d4;
+$subColor2: #f7b756;
+$subColor3: #f3d3b1;
+$lastColor1: #7ebda1;
+$lastColor2: #e66c53;
+$lastColor3: #fde9c1;
+$hightLightColor:#fcfcfc;
+$lightColor:#fdfced;
+$fontColor: #473d39;
+$lineColor: #f7b756;
+$fontColorWhite: #fcfcfc;
+
+
+.top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $subColor2;
+}
+
+.content {
+    // margin-bottom: 160px;
+    font-size: medium;
+    text-justify: inter-word;
+    letter-spacing: 0.15em;
+    font-weight: 400;
+    line-height: 2.4em;
+    text-align: justify-all;
+    max-width: 800px;
+    min-width: 410px;
+    min-height: 500px;
+    padding: 120px 80px 240px;
+    background-color: $lightColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul { 
+        ul {
+            list-style-type: disc;
+            padding-bottom: 1.3em;
+            // padding-left: 0;
+        }
+        list-style-type: decimal;
+        // padding-left: 0;
+    }
+    a {
+        color: $fontColor;
+    }
+}

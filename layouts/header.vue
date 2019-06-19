@@ -1,11 +1,14 @@
 <template>
   <header>
     <div class="header-topbar">
+      <div class="header-topbar-logo">
+        <a href="/"><img src="../assets/logo.png"></a>
+      </div>
       <div class="header-topbar-home">
         <nuxt-link to="/">Aizu Geek Dojo</nuxt-link>
       </div>
       <div class="header-topbar-u-aizu">
-        <a href="http://www.u-aizu.ac.jp/">会津大学公式サイト</a>
+        <a href="http://www.u-aizu.ac.jp/">会津大学ホームページ</a>
       </div>
       <div class="header-topbar-youtube">
         <a href="https://www.youtube.com/user/univaizu">Youtube</a>
@@ -20,26 +23,25 @@
       <!--@click="changeLang" >-->
       <!--日本語</div>-->
     </div>
+    <div class="header-center">
+      <img src="../assets/images/introduce/image7.jpg"/>
+    </div>
     <div class="header-secondbar">
-      <div class="header-secondbar-logo">
-        <a href="/"><img src="../assets/logo.png"></a>
-      </div>
       <div class="header-secondbar-links">
         <div class="header-secondbar-link">
-          <nuxt-link to="/opentime">開室日程</nuxt-link>
-        </div>
-        <div
-          class="header-secondbar-link">
-          <nuxt-link to="/about">AizuGeekDojoについて</nuxt-link>
+          <a><nuxt-link to="/about">AizuGeekDojoについて</nuxt-link></a>
         </div>
         <div class="header-secondbar-link">
-          <nuxt-link to="/product">制作物</nuxt-link>
+          <a><nuxt-link to="/opentime">開室日程</nuxt-link></a>
         </div>
         <div class="header-secondbar-link">
-          <nuxt-link to="/items">備品</nuxt-link>
+          <a><nuxt-link to="/product">制作物</nuxt-link></a>
         </div>
         <div class="header-secondbar-link">
-          <nuxt-link to="/instraction">講習会について</nuxt-link>
+          <a><nuxt-link to="/items">備品</nuxt-link></a>
+        </div>
+        <div class="header-secondbar-link">
+          <a><nuxt-link to="/instraction">講習会について</nuxt-link></a>
         </div>
       </div>
     </div>
@@ -61,7 +63,7 @@ if (process.client) {
       ? 'ja'
       : 'en'
 }
-
+import Vue from 'vue'
 import breadcrumb from '../components/breadcrumb'
 export default {
   components: {
@@ -96,48 +98,41 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  width: 100%;
-
+  margin: 0;
+  padding: 0;
   .header-topbar {
+    padding: 4px 10px 2px;
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
-    height: 300px;
+    height: 35px;
     width: 100%;
     // box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
 
-    .header-topbar-home {
-      // margin: 1px;
-      font-size: 25px;
-      a {
-        // margin-left: 15px;
-        // margin-right: 15px;
-        color: white;
-        text-decoration: none;
-      }
-
-      a:visited {
-        text-decoration: none;
-        color: white;
+    .header-topbar-logo {
+      position: relative;
+      img {
+        height: 29px;
+        width: auto;
+        border-style: solid;
+        border-width: thin;
       }
     }
 
-    .header-topbar-youtube {
-      right: 0;
-      bottom: 0;
+    .header-topbar-home {
+      left: 19px;
+      position: relative;
+    }
+
+    .header-topbar-u-aizu {
+      right: 40px;
       position: absolute;
-      margin: 3px;
-      a {
-        // margin-left: 15px;
-        // margin-right: 15px;
-        color: white;
-        text-decoration: none;
-      }
-      a:visited {
-        text-decoration: none;
-        color: white;
-      }
+    }
+
+    .header-topbar-youtube {
+      position: absolute;
+      right: 230px;
     }
   }
 
@@ -145,39 +140,36 @@ header {
     margin-left: 10px;
     margin-right: 10px;
     position: absolute;
-    font-size: 20px;
     right: 0;
   }
 
   .header-secondbar {
-    height: 80px;
+    min-height: 40px;
+    max-height: 80px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     position: relative;
-    padding-left: 50px;
-    justify-content: center;
-
-    .header-secondbar-logo {
-      margin-left: 30px;
-      margin-right: 30px;
-      img {
-        width: 56px;
-        height: 56px;
-      }
-    }
-    .header-secondbar-title {
-      margin-right: 20px;
-    }
     .header-secondbar-links {
       flex-grow: 1;
       display: flex;
       flex-direction: row;
-      align-items: center;
-      position: relative;
+      height: 100%;
+      div:not(:first-child):before {
+        content: '/';
+        // font-weight: bolder;
+        position: absolute;
+        left: -0.1em;
+        top: 35%;
+      }
       .header-secondbar-link {
-        margin-right: 10px;
-        margin-left: 10px;
+        margin: auto 0px;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        height: 100%;
+        width: 20%;
+        letter-spacing: 0.1em;
       }
     }
   }
@@ -189,59 +181,99 @@ header {
 
 header {
   .header-topbar {
-    background-color: $headerColor;
-    color: white;
-    font-size: 20px;
+    letter-spacing: 0.1em;
+    background-color: $mainColor1;
+    color: $fontColorWhite;
+    font-size: large;
+    img {
+      border-color: $hightLightColor;
+    }
 
     .header-topbar-home {
-      color: white;
+      color: $fontColorWhite;
       text-shadow: 0px 1px 1px #797a77;
+      font-size: large;
       a {
-        color: white;
+        color: $fontColorWhite;
         text-decoration: none;
       }
       a:visited {
         text-decoration: none;
-        color: white;
+        color: $fontColorWhite;
+      }
+    }
+
+    .header-topbar-youtube {
+      color: $fontColorWhite;
+      font-size: small;
+      a {
+        color: $fontColorWhite;
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+        color: $fontColorWhite;
       }
     }
 
     .header-topbar-u-aizu {
-      color: white;
+      font-size: small;
+      color: $fontColorWhite;
+
       a {
         text-decoration: none;
-        color: white;
+        color: $fontColorWhite;
       }
       a:visited {
         text-decoration: none;
-        color: white;
+        color: $fontColorWhite;
       }
     }
   }
 
+  .header-center {
+    height: 220px;
+    background-color: $lastColor3;
+    img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+  }
+
   .header-secondbar {
-    color: $fontColor;
+    box-shadow: 0px 10px 10px #0000003d;
+    background-color: $mainColor1;
+    font-size: medium;
     .header-secondbar-title {
-      color: $fontColor;
-      font-size: 20px;
     }
 
     .header-secondbar-links {
-      font-size: 20px;
-      color: $fontColor;
-
+      text-decoration: none;
+      div:not(:first-child):before {
+        color: $subColor2;
+      }
       .header-secondbar-link {
         a,
         a:visited {
+          padding-bottom: 4px;
           text-decoration: none;
-          color: $fontColor;
+          color: $fontColorWhite;
+        }
+        a:hover {
+          padding-bottom: 2px;
+          border-bottom: $subColor2 dashed 3px;
+          color: $lastColor3;
         }
       }
     }
   }
   .header-breadcrumb {
-    border-bottom: thin solid $lineColor;
-    border-top: thin solid $lineColor;
+    position: relative;
+    height: 45px;
+    margin-top: 4px;
+    // border-bottom: 20px solid $lineColor;
+    // border-top: 2px solid $lineColor;
   }
 }
 </style>

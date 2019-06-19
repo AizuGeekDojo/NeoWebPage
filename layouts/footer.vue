@@ -5,7 +5,7 @@
         <img src="../assets/uaizu.png">
       </div>
       <div class="footer_contents">
-        All rights rserved Aizu Geek Dojo
+        All rights reserved Aizu Geek Dojo.
       </div>
     </div>
   </footer>
@@ -18,32 +18,34 @@ export default {}
 <style lang="scss" scoped>
 @import '../style/color';
 footer {
+  box-shadow: 0px -5px 7px #0000001c;
+  border-top: 4px solid $subColor2;
   width: 100%;
-  height: 100%;
-  bottom: 0;
-  position: absolute;
-  margin-top: auto;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  height: 200px;
+  position: relative;
+  background-color: $mainColor1;
 
   .footer-bar {
+    top: 65px;
+    position: relative;
     display: flex;
-    align-items: center;
-    height: 100px;
+    height: 100%;
     width: 100%;
-    background-color: $footerColor;
-    justify-content: space-between;
-
     .footer_logo {
       img {
-        margin-left: 30px;
-        width: 70px;
-        height: 70px;
+        margin-left: 50px;
+        width: 100px;
+        height: auto;
       }
     }
-
     .footer_contents {
-      color: rgba(255, 255, 255, 0.9);
-      padding-right: 50px;
+      right: 0;
+      position: absolute;
+      font-weight: 100;
+      font-size: small;
+      letter-spacing: 0.1em;
+      color: $fontColorWhite;
+      margin: 30px;
     }
   }
 }

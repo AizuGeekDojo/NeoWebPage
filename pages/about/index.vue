@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="top">
     <div class="content">
       <p>Aizu Geek Dojo は、会津大学生のためのものづくりスペースです。</p>
       <p>ものづくりのための設備と備品がそろっています。</p>
@@ -101,9 +101,9 @@
           </ul>
         </li>
       </ul>
-    </div>
-    <div class="photo">
-      <img src="../../assets/images/geekdojo1.png">
+      <div class="photo">
+        <img src="../../assets/images/geekdojo1.png">
+      </div>
     </div>
   </div>
 </template>
@@ -128,39 +128,12 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../style/color';
-.about {
-  font-size: 20px;
-  color: $fontColor;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /*text-align: center;*/
-  margin-top: 20px;
-  margin-bottom: 20px;
-  overflow: auto;
 
-  .content {
-    width: 60%;
-    height: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    ul {
-      ul {
-        list-style-type: disc;
-        // padding-left: 0;
-      }
-      list-style-type: decimal;
-      // padding-left: 0;
-    }
-  }
-
+.top {
   .photo {
-    width: 40%;
-    padding-left: 30px;
-    padding-right: 30px;
+    position: relative;
+    top: 2em;
+    width: 90%;
     img {
       width: 100%;
       height: 100%;

@@ -1,13 +1,15 @@
 <template>
-  <div class="contents">
-    <div>
-      Aizu Geek Dojoに置いてあるレーザーカッターと3Dプリンターの講習資料と、
-      <br>
-      予約フォームは以下のリンクから参照できます。
-    </div>
-    <a href="https://github.com/AizuGeekDojo/LaserCutterInstruction/blob/master/doc_pdf/LaserCutter1.pdf">講習会資料</a>
+  <div class="top">
+    <div class="content">
+      <div>
+        Aizu Geek Dojoに置いてあるレーザーカッターと3Dプリンターの講習資料と、
+        <br>
+        予約フォームは以下のリンクから参照できます。
+      </div>
+      <a href="https://github.com/AizuGeekDojo/LaserCutterInstruction/blob/master/doc_pdf/LaserCutter1.pdf">講習会資料</a>
 
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_7ULD_MkPpy7Y8iSpfF8R6_mIUzGgd-ANeaAhFxDHmrhIfA/viewform">予約フォーム</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_7ULD_MkPpy7Y8iSpfF8R6_mIUzGgd-ANeaAhFxDHmrhIfA/viewform">予約フォーム</a>
+    </div>
   </div>
 </template>
 
@@ -31,17 +33,4 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/color';
-.contents {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  a {
-    margin-left: 15px;
-    margin-right: 15px;
-    color: $fontColor;
-  }
-}
 </styles>

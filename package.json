@@ -15,7 +15,10 @@
   "dependencies": {
     "cross-env": "^5.2.0",
     "nuxt": "^2.6.3",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "sticky": "^0.8.0",
+    "vue-sticky-directive": "0.0.8",
+    "vue-sticky-position": "^2.0.0"
   },
   "devDependencies": {
     "@nuxt/webpack": "^2.6.3",

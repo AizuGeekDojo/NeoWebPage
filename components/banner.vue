@@ -32,30 +32,35 @@ export default {}
 <style lang="scss" scoped>
 @import '../style/color';
 .banner {
-  @media (min-width: 1400px) {
-    .banner-ul {
-      display: flex;
-      align-items: center;
-      list-style: none;
-
-      .banner-li {
-        margin-right: 15px;
-        margin-left: 15px;
-      }
+  padding: 30px 10px;
+  // top: 100px;
+  background-color: $mainColor1;
+  position: relative;
+  .banner-ul {
+    padding: 25px 0;
+    margin: 0 auto;
+    border-top: 3px solid $subColor1;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    list-style: none;
+    .banner-li {
+      margin: 4px auto;
+      flex-shrink: 1;
+      flex-basis: 100px;
     }
   }
 
-  @media (max-width: 1400px) {
+  @media (max-width: 600px) {
     .banner-ul {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
       list-style: none;
+      text-align: center;
       flex-direction: column;
-      padding-left: 0px;
-      padding-right: 0px;
       .banner-li {
+        padding: 3px;
       }
     }
   }
