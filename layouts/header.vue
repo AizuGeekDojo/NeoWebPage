@@ -103,17 +103,16 @@ header {
     flex-direction: row;
     align-items: center;
     position: relative;
-    height: 50px;
+    height: 300px;
     width: 100%;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    // box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
 
     .header-topbar-home {
-      margin-left: 30px;
-      margin-right: 50px;
+      // margin: 1px;
       font-size: 25px;
       a {
-        margin-left: 15px;
-        margin-right: 15px;
+        // margin-left: 15px;
+        // margin-right: 15px;
         color: white;
         text-decoration: none;
       }
@@ -125,9 +124,13 @@ header {
     }
 
     .header-topbar-youtube {
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      margin: 3px;
       a {
-        margin-left: 15px;
-        margin-right: 15px;
+        // margin-left: 15px;
+        // margin-right: 15px;
         color: white;
         text-decoration: none;
       }
