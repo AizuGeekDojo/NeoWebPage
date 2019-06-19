@@ -45,6 +45,9 @@ export default {
 
 .header-mini {
   .header-mini-topbar {
+    box-shadow: 0px 5px 10px #0000003d;
+    position: fixed;
+    width: 100%;
     background-color: $mainColor1;
     display: flex;
     flex-direction: row;
@@ -75,12 +78,13 @@ export default {
       width: 50%;
     }
     .header-mini-menu {
-      margin-right: 15px;
       height: 80%;
       width: auto;
     }
   }
   .header-mini-dropdown-menu {
+    position: fixed;
+    top: 60px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -89,10 +93,10 @@ export default {
     justify-content: flex-start;
     align-items: center;
     background-color: $lastColor2;
-    opacity: 0.5;
+    opacity: 0.8;
     font-size: medium;
     a {
-      margin: 10px;
+      margin: 20px;
       padding-bottom: 2px;
       color: $hightLightColor;
       letter-spacing: 0.2em;
