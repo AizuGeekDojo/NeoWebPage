@@ -40,4 +40,5 @@ export default {
 </script>
 
 <style lang='scss' src='../style/foundation.scss'>
+@import '../style/color';
 </style>
