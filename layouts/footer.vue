@@ -36,6 +36,8 @@ footer {
         margin-left: 50px;
         width: 100px;
         height: auto;
+        border-radius: 50px;
+        background-color: $hightLightColor;
       }
     }
     .footer_contents {

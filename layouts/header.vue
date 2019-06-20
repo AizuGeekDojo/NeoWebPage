@@ -98,19 +98,16 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  margin: 0;
-  padding: 0;
   .header-topbar {
-    padding: 4px 10px 2px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    z-index: 1;
     position: relative;
     height: 35px;
     width: 100%;
-    // box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
-
     .header-topbar-logo {
+      margin: 5px 10px 2px;
       position: relative;
       img {
         height: 29px;
@@ -144,6 +141,10 @@ header {
   }
 
   .header-secondbar {
+    // position: -webkit-sticky;
+    // position: sticky;
+    // top: 0em;
+    margin: 0;
     min-height: 40px;
     max-height: 80px;
     width: 100%;
@@ -181,6 +182,7 @@ header {
 
 header {
   .header-topbar {
+    box-shadow: 0px 5px 10px #00000025;
     letter-spacing: 0.1em;
     background-color: $mainColor1;
     color: $fontColorWhite;
@@ -191,7 +193,6 @@ header {
 
     .header-topbar-home {
       color: $fontColorWhite;
-      text-shadow: 0px 1px 1px #797a77;
       font-size: large;
       a {
         color: $fontColorWhite;

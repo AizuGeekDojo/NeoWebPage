@@ -47,6 +47,7 @@ export default {
   margin: 0;
   padding: 0;
   .header-mini-topbar {
+    z-index: 3;
     box-shadow: 0px 5px 10px #0000003d;
     position: fixed;
     width: 100%;
@@ -85,6 +86,7 @@ export default {
     }
   }
   .header-mini-dropdown-menu {
+    z-index: 1;
     position: fixed;
     top: 60px;
     height: 100%;
@@ -95,8 +97,8 @@ export default {
     justify-content: flex-start;
     align-items: center;
     background-color: $lastColor2;
-    opacity: 0.8;
-    font-size: medium;
+    opacity: 0.95;
+    font-size: large;
     a {
       margin: 20px;
       padding-bottom: 2px;
