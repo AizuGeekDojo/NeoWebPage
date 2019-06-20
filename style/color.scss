@@ -55,3 +55,16 @@ $fontColorWhite: #fcfcfc;
         color: $fontColor;
     }
 }
+
+@media (max-width: 600px) {
+    .top {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        margin: 0;
+        padding: 60px 0;
+    }
+}

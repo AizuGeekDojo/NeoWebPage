@@ -42,8 +42,10 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/color';
-
 .header-mini {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   .header-mini-topbar {
     box-shadow: 0px 5px 10px #0000003d;
     position: fixed;
