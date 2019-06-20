@@ -33,19 +33,23 @@ export default {
 <style lang="scss" scoped>
 @import '../style/color';
 
-.youtube_link {
-  width: 100%;
-  height: auto;
-  iframe {
-    min-width: 700px;
-    min-height: 400px;
+@media (min-width: 600px) {
+  .youtube_link {
+    width: 100%;
+    height: auto;
+    iframe {
+      min-width: 700px;
+      min-height: 400px;
+    }
   }
 }
 @media (max-width: 600px) {
   .youtube_link {
+    width: 100%;
+    height: auto;
     iframe {
       min-width: 100%;
-      min-height: 250px;
+      min-height: 200px;
     }
   }
 }
