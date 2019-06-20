@@ -15,6 +15,7 @@ footer {
   width: 100%;
 
   .footer-bar {
+    width: 100%;
     display: flex;
     box-shadow: 0px -5px 7px #0000001c;
     height: 100px;
