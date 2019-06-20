@@ -62,7 +62,7 @@ $fontColorWhite: #fcfcfc;
 @media (max-width: 600px) {
     .content {
         font-size: medium;
-        letter-spacing: 0.15em;
+        letter-spacing: 0.1em;
         font-weight: 400;
         line-height: 2.4em;
         min-height: 500px;
@@ -83,12 +83,13 @@ $fontColorWhite: #fcfcfc;
             padding: 0;
         }
         ul { 
+            margin: 15px;
             ul {
                 list-style-type: disc;
-                padding: 1.3em 0.1em;
+                padding: 0;
             }
             li {
-                padding: 0.3em;
+                padding: 0.1em;
             }
             list-style-type: decimal;
         }
