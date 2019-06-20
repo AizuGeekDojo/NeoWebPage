@@ -44,8 +44,8 @@ export default {
 @media (max-width: 600px) {
   .youtube_link {
     iframe {
-      min-width: 500px;
-      min-height: 285px;
+      min-width: 100%;
+      min-height: 250px;
     }
   }
 }
