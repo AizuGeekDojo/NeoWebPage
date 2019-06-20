@@ -104,7 +104,7 @@ header {
     align-items: center;
     z-index: 1;
     position: relative;
-    height: 35px;
+    height: 38px;
     width: 100%;
     .header-topbar-logo {
       margin: 5px 10px 2px;
