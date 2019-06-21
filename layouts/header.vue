@@ -109,6 +109,7 @@ header {
       margin: 5px 10px 2px;
       position: relative;
       img {
+        border-radius: 3px;
         height: 29px;
         width: auto;
         border-style: solid;

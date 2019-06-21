@@ -61,6 +61,7 @@ export default {
     margin: 0;
     padding: 0;
     .header-mini-logo {
+      border-radius: 7px;
       border-style: solid;
       border-width: thin;
       border-color: $hightLightColor;
