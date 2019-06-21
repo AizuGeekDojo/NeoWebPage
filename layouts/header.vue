@@ -29,19 +29,19 @@
     <div class="header-secondbar">
       <div class="header-secondbar-links">
         <div class="header-secondbar-link">
-          <a><nuxt-link to="/about">AizuGeekDojoについて</nuxt-link></a>
+          <nuxt-link to="/about">AizuGeekDojoについて</nuxt-link>
         </div>
         <div class="header-secondbar-link">
-          <a><nuxt-link to="/opentime">開室日程</nuxt-link></a>
+          <nuxt-link to="/opentime">開室日程</nuxt-link>
         </div>
         <div class="header-secondbar-link">
-          <a><nuxt-link to="/product">制作物</nuxt-link></a>
+          <nuxt-link to="/product">制作物</nuxt-link>
         </div>
         <div class="header-secondbar-link">
-          <a><nuxt-link to="/items">備品</nuxt-link></a>
+          <nuxt-link to="/items">備品</nuxt-link>
         </div>
         <div class="header-secondbar-link">
-          <a><nuxt-link to="/instraction">講習会について</nuxt-link></a>
+          <nuxt-link to="/instraction">講習会について</nuxt-link>
         </div>
       </div>
     </div>
@@ -63,7 +63,6 @@ if (process.client) {
       ? 'ja'
       : 'en'
 }
-import Vue from 'vue'
 import breadcrumb from '../components/breadcrumb'
 export default {
   components: {
