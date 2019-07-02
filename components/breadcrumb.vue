@@ -35,18 +35,18 @@ export default {
 <style lang="scss" scoped>
 @import '../style/color';
 .breadcrumb-ul {
+  margin: 0;
   display: flex;
   flex-direction: row;
-  align-items: center;
   position: relative;
-  height: 20px;
+  box-shadow: 0px 5px 7px #0000001c;
+  top: -4px;
+  height: 100%;
   .breadcrumb-li {
+    font-weight: 100;
     display: flex;
     align-items: center;
-    margin-right: 30px;
-    margin-left: 30px;
     list-style: none;
-    font-size: 22px;
     .breadcrumb-li-links-home {
       img {
         height: 22px;
@@ -56,12 +56,14 @@ export default {
     .breadcrumb-li-links-home:after {
       content: '|';
       display: inline-block;
+      font-size: x-large;
       align-items: center;
-      margin-left: 50px;
-      font-size: 22px;
+      margin: 0 30px;
     }
     .breadcrumb-li-links {
-      font-size: 22px;
+      font-size: larger;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
     }
     .breadcrumb-li-links:last-child:after {
       content: none;
@@ -70,6 +72,8 @@ export default {
 }
 
 .breadcrumb-ul {
+  border-top: 4px solid $subColor2;
+  background-color: $hightLightColor;
   .breadcrumb-li {
     a,
     a:visited {

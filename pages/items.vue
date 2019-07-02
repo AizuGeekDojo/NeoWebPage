@@ -1,14 +1,16 @@
 <template>
-  <div class="contents">
-    <p>Aizu Geek Dojo では以下のものを備品として揃えています。</p>
-    <ul class="items">
-      <li
-        v-for="item in items"
-        :key="item"
-        class="item">
-        {{ item }}
-      </li>
-    </ul>
+  <div class="top">
+    <div class="content">
+      <p>Aizu Geek Dojo では以下のものを備品として揃えています。</p>
+      <ul class="items">
+        <li
+          v-for="item in items"
+          :key="item"
+          class="item">
+          {{ item }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -34,31 +36,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.contents {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@import '../style/color';
 
-  p {
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-    justify-content: center;
-    text-align: center;
-  }
-
+.content {
   .items {
-    /*width: 40%;*/
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
-    justify-content: center;
     text-align: center;
     li {
       display: inline-block;
-      padding: 0 10px;
     }
   }
 }

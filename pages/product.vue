@@ -1,11 +1,13 @@
 <template>
-  <div class="product">
-    <div class="youtube_link">
-      <iframe
-        src="https://www.youtube.com/embed/ODhsndH_6os"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen/>
+  <div class="top">
+    <div class="content">
+      <div class="youtube_link">
+        <iframe
+          src="https://www.youtube.com/embed/ODhsndH_6os"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen/>
+      </div>
     </div>
   </div>
 </template>
@@ -29,20 +31,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.product {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-content: center;
-  flex-direction: column;
+@import '../style/color';
+
+@media (min-width: 600px) {
+  .youtube_link {
+    width: 100%;
+    height: auto;
+    iframe {
+      min-width: 700px;
+      min-height: 400px;
+    }
+  }
 }
-.youtube_link {
-  width: 100%;
-  iframe {
-    width: 1000px;
-    height: 600px;
+@media (max-width: 600px) {
+  .youtube_link {
+    width: 100%;
+    height: auto;
+    iframe {
+      min-width: 100%;
+      min-height: 200px;
+    }
   }
 }
 </style>
