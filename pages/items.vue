@@ -43,6 +43,7 @@ export default {
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 0;
     li {
       display: inline-block;
     }
