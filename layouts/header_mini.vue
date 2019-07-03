@@ -5,17 +5,29 @@
         src="../assets/logo.png"
         class="header-mini-logo">
       <div class="header-mini-title"><nuxt-link to="/">Aizu Geek Dojo</nuxt-link></div>
-      <hamburger-menu @close-sender="menu" />
+      <hamburger-menu 
+        ref="hamburger" 
+        @close-sender="menu" />
     </div>
     
     <div
       v-if="isMenu"
       class="header-mini-dropdown-menu">
-      <nuxt-link to="about">About</nuxt-link>
-      <nuxt-link to="/opentime">開室日程</nuxt-link>
-      <nuxt-link to="/product">制作物</nuxt-link>
-      <nuxt-link to="/items">備品</nuxt-link>
-      <nuxt-link to="underconstruct">講習会</nuxt-link>
+      <nuxt-link
+        to="about"
+        @click.native="close_menu">About</nuxt-link>
+      <nuxt-link
+        to="/opentime"
+        @click.native="close_menu">開室日程</nuxt-link>
+      <nuxt-link
+        to="/product"
+        @click.native="close_menu">制作物</nuxt-link>
+      <nuxt-link
+        to="/items"
+        @click.native="close_menu">備品</nuxt-link>
+      <nuxt-link
+        to="underconstruct"
+        @click.native="close_menu">講習会</nuxt-link>
       <a href="https://www.youtube.com/user/univaizu">Youtube</a>
     </div>
   </div>
@@ -35,6 +47,9 @@ export default {
   methods: {
     menu: function() {
       this.isMenu = !this.isMenu
+    },
+    close_menu: function() {
+      this.$refs.hamburger.click_hamburger()
     }
   }
 }
