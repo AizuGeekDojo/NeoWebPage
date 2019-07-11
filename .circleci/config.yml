@@ -16,11 +16,11 @@ jobs:
 
       - run:
           name: Install Dependency
-          command: npm install
+          command: yarn
 
       - run:
           name: Build
-          command: npm run build
+          command: yarn generate
 
       - save_cache:
           key: npm-{{ checksum "package-lock.json" }}
@@ -29,7 +29,7 @@ jobs:
           force: yes
       - run:
           name: Git setup
-          command: git config user.email "circleci" && git config user.name "circleci"
+          command: git config --global user.email "circleci" && git config --global user.name "circleci"
 
       - run:
           name: Clone deploy repo
@@ -40,7 +40,7 @@ jobs:
           command: cd AizuGeekDojo.github.io && rm -rf * && cp -r ../dist/* . && git add . && git commit -m "Update."
       - run:
           name: Push to deploy
-          command: git push
+          command: cd AizuGeekDojo.github.io && git push
 
 workflows:
   version: 2
