@@ -1,5 +1,12 @@
 const pkg = require('./package')
 
+const url = 'https://aizugeekdojo.github.io'
+const title = 'Aizu Geek Dojo'
+const description =
+  'Aizu Geek Dojoは、会津大学生のためのものづくりスペースです。ものづくりのための設備と備品がそろっています。 開室時間中は、機器の使用に詳しいSA/TAが設備および備品の使用方法を指導します。個人の趣味製作、コンテスト出展作品製作、サークル活動、卒業研究、課外プロジェクト製作等、いろいろな場面で活用してください。是非お気軽にお立ち寄りください。'
+const keywords =
+  'Aizu Geek Dojo, Geek Dojo, 会津大学, 会津ギーク道場, ギーク道場'
+
 module.exports = {
   mode: 'universal',
 
@@ -7,24 +14,31 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Aizu Geek Dojo',
+    title: title,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content:
-          'Aizu Geek Dojoは、会津大学生のためのものづくりスペースです。ものづくりのための設備と備品がそろっています。 開室時間中は、機器の使用に詳しいSA/TAが設備および備品の使用方法を指導します。個人の趣味製作、コンテスト出展作品製作、サークル活動、卒業研究、課外プロジェクト製作等、いろいろな場面で活用してください。是非お気軽にお立ち寄りください。'
+        content: description
       },
       {
         name: 'keywords',
-        content:
-          'Aizu Geek Dojo, Geek Dojo, 会津大学, 会津ギーク道場, ギーク道場'
+        content: keywords
       },
       {
         name: 'google-site-verification',
         content: 'WcictFNzcT-J0gh-B5m6AycTQNfQySLQzom9UNH_GVc'
+      },
+      { hid: 'og:site_name', property: 'og:site_name', content: title },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: url },
+      { hid: 'og:title', property: 'og:title', content: title },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: description
       }
     ],
     link: [
@@ -50,7 +64,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: [{ src: '~plugins/ga.js', ssr: false }],
 
   /*
   ** Nuxt.js modules
