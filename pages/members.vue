@@ -70,9 +70,19 @@ export default {
           like: 'go python 車 菜々家の銀ひらすの西京焼き定食',
           links: [
             {
-              src: 'https://twitter.com/flying_hato_bus',
+              src: 'https://twitter.com/hg_fmt',
               prefix: 'fab',
               icon: 'twitter'
+            },
+            {
+              src: 'https://github.com/hatobus/',
+              prefix: 'fab',
+              icon: 'github'
+            },
+            {
+              src: 'https://github.com/fumitonn/',
+              prefix: 'fab',
+              icon: 'github'
             }
           ]
         },
