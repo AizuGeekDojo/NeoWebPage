@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const { sourceFileArray } = require('./blog/summary.json')
 
 const url = 'https://aizugeekdojo.github.io'
 const title = 'Aizu Geek Dojo'
@@ -6,6 +7,22 @@ const description =
   'Aizu Geek Dojoは、会津大学生のためのものづくりスペースです。ものづくりのための設備と備品がそろっています。 開室時間中は、機器の使用に詳しいSA/TAが設備および備品の使用方法を指導します。個人の趣味製作、コンテスト出展作品製作、サークル活動、卒業研究、課外プロジェクト製作等、いろいろな場面で活用してください。是非お気軽にお立ち寄りください。'
 const keywords =
   'Aizu Geek Dojo, Geek Dojo, 会津大学, 会津ギーク道場, ギーク道場'
+
+function sourceFileNameToUrl(filepath) {
+  const deleteExt = filepath.replace('.md', '')
+  const fileName = deleteExt.split('/')[deleteExt.split('/').length - 1]
+  const splitArray = fileName.split('-')
+  return `/blog/${splitArray.slice(0, 3).join('-')}/${splitArray
+    .slice(3)
+    .join('-')}`
+}
+
+const generateDynamicRoutes = callback => {
+  const routes = sourceFileArray.map(sourceFileName => {
+    return sourceFileNameToUrl(sourceFileName)
+  })
+  callback(null, routes)
+}
 
 module.exports = {
   mode: 'universal',
@@ -111,5 +128,9 @@ module.exports = {
     cacheTime: 1000 * 60 * 15,
     generate: true,
     exclude: []
+  },
+
+  generate: {
+    routes: generateDynamicRoutes
   }
 }
