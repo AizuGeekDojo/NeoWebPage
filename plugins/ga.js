@@ -1,10 +1,3 @@
-/*
-  ** クライアントサイドかつプロダクションモードでのみ実行
-  */
-if (process.env.NODE_ENV !== 'production')
-  return /*
-  ** Google アナリティクスのスクリプトをインクルード
-  */
 ;(function(i, s, o, g, r, a, m) {
   i['GoogleAnalyticsObject'] = r
   ;(i[r] =
