@@ -80,9 +80,9 @@ export default {
               icon: 'github'
             },
             {
-              src: 'https://github.com/fumitonn/',
+              src: 'https://www.facebook.com/fumitonn',
               prefix: 'fab',
-              icon: 'github'
+              icon: 'facebook'
             }
           ]
         },
