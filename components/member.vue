@@ -6,6 +6,21 @@
     <div class="name">
       <p> {{ name }}</p>
     </div>
+    <div class="links">
+      <div
+        v-for="(link, index) in links"
+        :key="index">
+        <a
+          :href="link.src"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="icon" >
+          <font-awesome-icon
+            :icon="[link.prefix, link.icon]"
+          />
+        </a>
+      </div>
+    </div>
     <div class="detail">
       <p> {{ detail }}</p>
     </div>
@@ -33,6 +48,10 @@ export default {
     like: {
       type: String,
       required: true
+    },
+    links: {
+      type: Array,
+      required: true
     }
   }
 }
@@ -50,7 +69,7 @@ export default {
   margin-bottom: 20px;
 
   display: grid;
-  grid-template-rows: 60% 40%;
+  grid-template-rows: 60% 20% 20%;
   grid-template-columns: 40% 1fr;
   .picture {
     grid-row: 1/2;
@@ -77,6 +96,21 @@ export default {
     grid-row: 2/3;
     grid-column: 2/3;
     text-align: center;
+  }
+  .links {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    .icon {
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 25px;
+    }
   }
 }
 </style>
