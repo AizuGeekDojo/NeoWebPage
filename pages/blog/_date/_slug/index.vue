@@ -123,16 +123,27 @@ export default {
         border-left: solid 5px #59fcff;
       }
 
+      /deep/ h3 {
+        padding: 0.5em;
+        background: white;
+        border-left: solid 5px #fcff59;
+      }
+
+      /deep/ h4 {
+        padding: 0.5em;
+        background: white;
+        border-left: solid 5px #fc59ff;
+      }
+
       /deep/ pre {
         background-color: rgba(50, 50, 50, 0.1);
         margin-right: 20px;
         margin-left: 20px;
         margin-bottom: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 20px;
+        border-radius: 5px;
         line-height: normal;
+        overflow: auto;
       }
     }
   }
