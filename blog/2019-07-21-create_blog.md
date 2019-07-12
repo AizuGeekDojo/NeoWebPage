@@ -1,7 +1,6 @@
 ---
 title: NuxtJSでブログを作る1
 created_at: 2019-07-21
-updated_at: 2019-07-21
 tags: NuxtJS, ブログ, processmd
 ---
 

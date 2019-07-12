@@ -43,6 +43,29 @@ export default {
       ],
       link: [{ rel: 'canonical', href: url }]
     }
+  },
+  data: function() {
+    return {
+      breadcrumbs: [
+        {
+          name: 'BLOG',
+          path: '/blog'
+        }
+      ]
+    }
+  },
+  created() {
+    this.breadcrumbs.push(
+      {
+        name: this.params.date,
+        path: `/blog/${this.params.date}`
+      },
+      {
+        name: this.params.slug,
+        path: `/blog/${this.params.date}/${this.params.slug}`
+      }
+    )
+    this.$store.commit('change_page', this.breadcrumbs)
   }
 }
 </script>
@@ -98,6 +121,18 @@ export default {
         padding: 0.5em;
         background: white;
         border-left: solid 5px #59fcff;
+      }
+
+      /deep/ pre {
+        background-color: rgba(50, 50, 50, 0.1);
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: normal;
       }
     }
   }

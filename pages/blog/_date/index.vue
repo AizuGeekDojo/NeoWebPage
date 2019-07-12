@@ -4,33 +4,54 @@
       <div 
         v-for="(article, index) in articles" 
         :key="index">
-        <article_board :article="article" />        
+        <article_board :article="article" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { fileMap } from '../../blog/summary.json'
-import article_board from '../../components/article-board.vue'
+import article_board from '../../../components/article-board.vue'
+
+import { fileMap } from '../../../blog/summary.json'
 export default {
+  validate({ params }) {
+    return /\d+[\-]\d+[\-]\d+/.test(params.date)
+  },
+  async asyncData({ params }) {
+    return { params }
+  },
   components: {
     article_board: article_board
   },
   data: function() {
     return {
+      articles: [],
       breadcrumbs: [
         {
-          name: 'blog',
+          name: 'BLOG',
           path: '/blog'
         }
-      ],
-      articles: []
+      ]
     }
   },
   created: function() {
+    this.breadcrumbs.push({
+      name: this.params.date,
+      path: `/blog/${this.params.date}`
+    })
+    const spliteDate = this.params.date.split('-')
+    console.log(this.params)
+    for (let key in fileMap) {
+      if (
+        key.indexOf(
+          `blog/${spliteDate[0]}-${spliteDate[1]}-${spliteDate[2]}`
+        ) !== 0
+      ) {
+        this.articles.push(fileMap[key])
+      }
+    }
     this.$store.commit('change_page', this.breadcrumbs)
-    this.articles = fileMap
   }
 }
 </script>
