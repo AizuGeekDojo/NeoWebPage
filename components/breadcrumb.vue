@@ -10,7 +10,7 @@
     <li
       v-for="(crumb, index) in breadcrumbs" 
       :key="index"
-      class="breadcrumb-li">
+      class="breadcrumb-li-pages">
       <span v-if="crumb.path">
         <nuxt-link
           :to="crumb.path"
@@ -68,6 +68,39 @@ export default {
     .breadcrumb-li-links:last-child:after {
       content: none;
     }
+  }
+  .breadcrumb-li-pages {
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    .breadcrumb-li-links {
+      font-size: larger;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+    .breadcrumb-li-links:last-child:after {
+      content: none;
+    }
+  }
+  .breadcrumb-li-pages:after {
+    content: '/';
+    display: inline-block;
+    font-size: x-large;
+    align-items: center;
+    margin: 0 30px;
+  }
+}
+/deep/ a,
+a:visited {
+  color: $fontColor;
+  text-decoration: none;
+}
+/deep/ span {
+  a,
+  a:visited {
+    color: $fontColor;
+    text-decoration: none;
   }
 }
 
