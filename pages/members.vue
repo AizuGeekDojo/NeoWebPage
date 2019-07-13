@@ -163,7 +163,6 @@ export default {
         array[i] = array[r]
         array[r] = tmp
       }
-      console.log(array)
       return array
     }
   }
