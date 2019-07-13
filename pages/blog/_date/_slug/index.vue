@@ -152,13 +152,13 @@ export default {
           font-size: 25px;
         }
         /deep/ h2 {
-          font-size: 20px;
+          font-size: 23px;
         }
         /deep/ h3 {
-          font-size: 15px;
+          font-size: 20px;
         }
         /deep/ h4 {
-          font-size: 10px;
+          font-size: 18px;
         }
       }
 

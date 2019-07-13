@@ -37,13 +37,18 @@ export default {
 
 <style lang="scss" scoped>
 .top {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   .content {
-    width: 100%;
+    width: auto;
     padding: 0;
     div {
-      width: 80%;
+      @media (max-width: 600px) {
+        width: 95%;
+      }
+      @media (min-width: 600px) {
+        width: 80%;
+      }
       margin-top: 5px;
       margin-bottom: 0px;
       margin-left: auto;
