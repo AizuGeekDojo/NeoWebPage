@@ -41,7 +41,8 @@ export default {
   position: relative;
   box-shadow: 0px 5px 7px #0000001c;
   top: -4px;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   .breadcrumb-li {
     font-weight: 100;
     display: flex;
@@ -108,6 +109,10 @@ a:visited {
   border-top: 4px solid $subColor2;
   background-color: $hightLightColor;
   .breadcrumb-li {
+    breadcrumb-li-links-home {
+      text-align: center;
+      display: flex;
+    }
     a,
     a:visited {
       color: $fontColor;

@@ -82,7 +82,7 @@ export default {
     width: 90%;
     .top-content {
       width: 100%;
-      height: 100px;
+      height: auto;
 
       background: white;
 
@@ -96,6 +96,8 @@ export default {
       border-style: solid;
       border-color: black;
       .title {
+        margin-top: 10px;
+        margin-bottom: 10px;
         margin-left: 50px;
         font-size: 40px;
       }
