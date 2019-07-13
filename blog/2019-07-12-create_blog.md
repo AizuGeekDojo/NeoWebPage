@@ -6,15 +6,15 @@ tags: NuxtJS, ブログ, processmd
 
 # 続き
 
-こんにちは、会津大学学部4年の森本望です。
-[前回](../2019-07-11/create_blog)に引き続きブログを作っていきます。
-今回はMarkdownを使って動的にWebページを生成していきます。
-動的とは言ってもCIでビルド毎に静的なページを吐き出しています。
+こんにちは、会津大学学部4年の森本望です。  
+[前回](../2019-07-11/create_blog)に引き続きブログを作っていきます。  
+今回はMarkdownを使って動的にWebページを生成していきます。  
+動的とは言ってもCIでビルド毎に静的なページを吐き出しています。  
 
 ## processmd 
 
-今回MarkdownをHTMLに直すのに使うのは[processmd](https://www.npmjs.com/package/processmd)です。
-このライブラリを使うのは、MarkdownからJSONを吐き出してくれるので、タグなどのメタ情報を含ませやすいからです。
+今回MarkdownをHTMLに直すのに使うのは[processmd](https://www.npmjs.com/package/processmd)です。  
+このライブラリを使うのは、MarkdownからJSONを吐き出してくれるので、タグなどのメタ情報を含ませやすいからです。  
 
 まずこのようなMarkdownを書きます。
 
@@ -28,22 +28,22 @@ tags: NuxtJS, ブログ, processmd
 
 # 続き
 
-[前回](./2019-07-21/create_blog)に引き続きブログを作っていきます。
-今回はMarkdownを使って動的にWebページを生成していきます。
-動的とは言ってもCIでビルド毎に静的なページを吐き出しています。
+[前回](./2019-07-21/create_blog)に引き続きブログを作っていきます。  
+今回はMarkdownを使って動的にWebページを生成していきます。  
+動的とは言ってもCIでビルド毎に静的なページを吐き出しています。  
 
 ## processmd 
 
-今回MarkdownをHTMLに直すのに使うのは[processmd](https://www.npmjs.com/package/processmd)です。
-このライブラリを使うのは、MarkdownからJSONを吐き出してくれるので、タグなどのメタ情報を含ませやすいからです。
+今回MarkdownをHTMLに直すのに使うのは[processmd](https://www.npmjs.com/package/processmd)です。  
+このライブラリを使うのは、MarkdownからJSONを吐き出してくれるので、タグなどのメタ情報を含ませやすいからです。  
 
-まずこのようなMarkdownを書きます。
+まずこのようなMarkdownを書きます。  
 
 ```
 
 ### Markdown to JSON
 
-先ほどのMarkDownをJSONに変換します。
+先ほどのMarkDownをJSONに変換します。  
 ``` sh
 processmd ./blog/* --stdout --outputDir ./blog/ > ./blog/summary.json
 ```
@@ -58,7 +58,7 @@ blog
 └── summary.json
 ```
 
-このようなファイルが出力されます。
+このようなファイルが出力されます。  
 
 2019-07-22-create_blog.json 
 ``` json 
@@ -105,8 +105,8 @@ summary.json
 
 NuxtJSで先ほど作成したJSONを読み込み、HTMLに埋め込みます。
 
-ディレクトリを以下のように作成します。  
-`_date`や`_slug`はNuxtの動的なルーティングに使います。  
+ディレクトリを以下のように作成します。    
+`_date`や`_slug`はNuxtの動的なルーティングに使います。    
 [ドキュメント](https://ja.nuxtjs.org/guide/routing/#%E5%8B%95%E7%9A%84%E3%81%AA%E3%83%AB%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)
 
 ``` 
@@ -123,9 +123,9 @@ pages/blog
 
 このページはこんな感じに作っています。
 
-`validate`で動的なページを作成するリンクを制限しています。
-今回だと`summary.json`の`sourceFileArray`に、リンクのデータが存在しているかを確認しています。
-```js
+`validate`で動的なページを作成するリンクを制限しています。  
+今回だと`summary.json`の`sourceFileArray`に、リンクのデータが存在しているかを確認しています。  
+``` js
 import { sourceFileArray } from '../../../../blog/summary.json';
 ...
 validate({ params }) {
@@ -134,15 +134,15 @@ validate({ params }) {
 ```
 
 `asyncData`は実際に表示するコンテンツを取得してきています。  
-今回だと`2019-07-22-create_blog.json`が当てはまりますね。
+今回だと`2019-07-22-create_blog.json`が当てはまりますね。  
 
 `head()`はHTMLのheadタグを作成するのに使います。  
-以下の実装だと`url`, `title`しかmetaタグに入れていませんが、SEO的に`description`入れたりしたいですね。
+以下の実装だと`url`, `title`しかmetaタグに入れていませんが、SEO的に`description`入れたりしたいですね。  
 
 そして`v-html`に`2019-07-22-create_blog.json`の`bodyHtml`を渡しています。  
 余談ですが、ここで埋め込む要素にCSSを当てたい場合ディープセレクターを使う必要があります。  
 このWebページではこの記事を書いてる現在以下のようにCSSを当てています。  
-素のHTMLだけだと味気ないので好みに整形しても良いですね
+素のHTMLだけだと味気ないので好みに整形しても良いですね  
 
 ```css
 /deep/ h1 {
