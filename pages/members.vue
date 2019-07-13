@@ -29,9 +29,10 @@ export default {
       members: [
         {
           name: '森本 望',
-          picture_path: require('@/assets/images/member/notfound.jpg'),
-          detail: '',
-          like: 'カメラ, Golang, Vim',
+          picture_path: require('@/assets/images/member/nozomoto.jpg'),
+          detail:
+            'フロント、サーバーサイドからインフラまで色々やります。最近はDeepにLearningしてる。',
+          like: 'カメラ, Golang, Vue, Vim, 藍染カレン',
           links: [
             {
               src: 'https://www.nozograph.com/',
@@ -108,7 +109,7 @@ export default {
         },
         {
           name: '星裕也',
-          picture_path: require('@/assets/images/member/notfound.jpg'),
+          picture_path: require('@/assets/images/member/hosi.jpg'),
           detail: 'Geek二年目',
           like: '',
           links: []
@@ -137,6 +138,32 @@ export default {
           detail: '不発の大玉花火',
           like: '📻🚶✈️💤',
           links: []
+        },
+        {
+          name: 'TC',
+          picture_path: require('@/assets/images/member/notfound.jpg'),
+          detail: 'バ美肉済',
+          like: 'VR. 3D',
+          links: []
+        },
+        {
+          name: 'じぶりん (gpioblink)',
+          picture_path: require('@/assets/images/member/gpiobrink.jpg'),
+          detail:
+            '適当にvueでアプリ作るくらいの弱小もくもくマン。LTともくもく大好きなのでみんな誘ってね。タダ飯もよろしく！',
+          like: 'Vue.js, タダ飯',
+          links: [
+            {
+              src: 'https://www.facebook.com/profile.php?id=100025436730296',
+              prefix: 'fab',
+              icon: 'facebook'
+            },
+            {
+              src: 'https://github.com/gpioblink/',
+              prefix: 'fab',
+              icon: 'github'
+            }
+          ]
         }
       ],
       breadcrumbs: [
