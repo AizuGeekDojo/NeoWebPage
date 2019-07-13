@@ -40,7 +40,7 @@ export default {
   width: auto;
   height: auto;
   .content {
-    width: auto;
+    width: 100%;
     padding: 0;
     div {
       @media (max-width: 600px) {
