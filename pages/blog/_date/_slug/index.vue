@@ -76,42 +76,107 @@ export default {
 .content {
   margin: 0 auto;
   padding: 0;
-  width: 80%;
+  @media (max-width: 600px) {
+    width: 95%;
+  }
+  @media (min-width: 600px) {
+    width: 80%;
+  }
   .article-content {
     margin-top: 20px;
-    width: 90%;
-    .top-content {
+    @media (max-width: 600px) {
       width: 100%;
+    }
+    @media (min-width: 600px) {
+      width: 90%;
+    }
+    .top-content {
+      width: auto;
       height: auto;
+
+      @media (max-width: 600px) {
+        display: grid;
+        grid-template-rows: 75% 25%;
+        .title {
+          margin-top: 5px;
+          margin-bottom: 5px;
+          font-size: 20px;
+          line-height: normal;
+        }
+
+        .post-meta {
+          display: grid;
+          margin: 0 auto;
+          .post-meta-date {
+            margin: 0 auto;
+          }
+        }
+      }
+      @media (min-width: 600px) {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        .title {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-left: 50px;
+          font-size: 40px;
+        }
+
+        .post-meta {
+          display: grid;
+          grid-template-rows: 50%;
+          .post-meta-date {
+            grid-row: 2 / 3;
+          }
+        }
+      }
 
       background: white;
 
-      display: grid;
       justify-content: center;
       text-align: center;
       align-items: center;
-      grid-template-columns: 60% 40%;
 
       border-width: 1px;
       border-style: solid;
       border-color: black;
-      .title {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 50px;
-        font-size: 40px;
-      }
-      .post-meta {
-        display: grid;
-        grid-template-rows: 50%;
-        .post-meta-date {
-          grid-row: 2 / 3;
-        }
-      }
     }
     .body-content {
-      width: 100%;
+      width: auto;
+      height: auto;
       text-align: left;
+
+      @media (max-width: 600px) {
+        line-height: normal;
+        /deep/ h1 {
+          font-size: 25px;
+        }
+        /deep/ h2 {
+          font-size: 20px;
+        }
+        /deep/ h3 {
+          font-size: 15px;
+        }
+        /deep/ h4 {
+          font-size: 10px;
+        }
+      }
+
+      @media (min-width: 600px) {
+        line-height: inherit;
+        /deep/ h1 {
+          font-size: 40px;
+        }
+        /deep/ h2 {
+          font-size: 35px;
+        }
+        /deep/ h3 {
+          font-size: 30px;
+        }
+        /deep/ h4 {
+          font-size: 25px;
+        }
+      }
 
       /deep/ h1 {
         padding: 0.5em;

@@ -28,6 +28,9 @@
       <nuxt-link
         to="underconstruct"
         @click.native="close_menu">講習会</nuxt-link>
+      <nuxt-link
+        to="/blog"
+        @click.native="close_menu">ブログ</nuxt-link>
       <a href="https://www.youtube.com/user/univaizu">Youtube</a>
     </div>
   </div>
@@ -59,6 +62,7 @@ export default {
 @import '../style/color';
 .header-mini {
   width: 100%;
+  height: 60px;
   margin: 0;
   padding: 0;
   .header-mini-topbar {
