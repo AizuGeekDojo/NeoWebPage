@@ -47,10 +47,13 @@ export default {
           `blog/${spliteDate[0]}-${spliteDate[1]}-${spliteDate[2]}`
         ) !== -1
       ) {
-        console.log(fileMap[key])
         this.articles.push(fileMap[key])
       }
     }
+    this.articles = Object.entries(this.articles)
+      .sort()
+      .reverse()
+    console.log(this.articles)
     this.$store.commit('change_page', this.breadcrumbs)
   }
 }

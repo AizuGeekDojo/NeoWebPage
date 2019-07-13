@@ -30,7 +30,9 @@ export default {
   },
   created: function() {
     this.$store.commit('change_page', this.breadcrumbs)
-    this.articles = fileMap
+    this.articles = Object.entries(fileMap)
+      .sort()
+      .reverse()
   }
 }
 </script>
