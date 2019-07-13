@@ -109,7 +109,7 @@ a:visited {
   border-top: 4px solid $subColor2;
   background-color: $hightLightColor;
   .breadcrumb-li {
-    breadcrumb-li-links-home {
+    a {
       text-align: center;
       display: flex;
     }
