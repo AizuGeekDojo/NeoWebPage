@@ -41,13 +41,13 @@ export default {
       path: `/blog/${this.params.date}`
     })
     const spliteDate = this.params.date.split('-')
-    console.log(this.params)
     for (let key in fileMap) {
       if (
         key.indexOf(
           `blog/${spliteDate[0]}-${spliteDate[1]}-${spliteDate[2]}`
-        ) !== 0
+        ) !== -1
       ) {
+        console.log(fileMap[key])
         this.articles.push(fileMap[key])
       }
     }
