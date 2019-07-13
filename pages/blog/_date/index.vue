@@ -53,7 +53,6 @@ export default {
     this.articles = Object.entries(this.articles)
       .sort()
       .reverse()
-    console.log(this.articles)
     this.$store.commit('change_page', this.breadcrumbs)
   }
 }
