@@ -44,6 +44,9 @@
           <nuxt-link to="/instraction">講習会について</nuxt-link>
         </div>
         <div class="header-secondbar-link">
+          <nuxt-link to="/blog">ブログ</nuxt-link>
+        </div>
+        <div class="header-secondbar-link">
           <nuxt-link to="/members">メンバー</nuxt-link>
         </div>
       </div>

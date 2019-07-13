@@ -20,3 +20,26 @@ $ yarn run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+
+## How To Create blog article
+
+```
+$ yarn blog-template
+Title: test
+Tag(カンマ区切り): test
+writer: test
+```
+
+then, you can get article template in `./blog/${date}-${filename}`.  
+then, you write content, under
+
+```
+---
+title: test
+created_at: 2019-07-13
+tags: test
+description:
+writer: test
+---
+
+```

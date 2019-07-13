@@ -8,18 +8,26 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "yarn processmd && nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "processmd": "rm -f ./blog/*.json && processmd ./blog/* --stdout --outputDir ./blog/ > ./blog/summary.json",
+    "blog-template": "processmd_template_maker --outputDir=./blog/"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/vue-fontawesome": "^0.1.6",
+    "@nuxtjs/markdownit": "^1.2.5",
     "@nuxtjs/sitemap": "^1.2.0",
     "cross-env": "^5.2.0",
+    "markdown-it-anchor": "^5.2.4",
+    "markdown-it-highlight": "^0.2.0",
+    "markdown-it-meta": "^0.0.1",
+    "markdown-it-table-of-contents": "^0.4.4",
     "nuxt": "^2.6.3",
+    "processmd_template_maker": "github:nozo-moto/processmd_template_maker",
     "sass-loader": "^7.1.0",
     "sticky": "^0.8.0",
     "vue-sticky-directive": "0.0.8",
@@ -36,6 +44,7 @@
     "node-sass": "^4.12.0",
     "nodemon": "^1.11.0",
     "nuxt-fontawesome": "^0.4.0",
-    "prettier": "1.14.3"
+    "prettier": "1.14.3",
+    "processmd": "^4.4.2"
   }
 }
