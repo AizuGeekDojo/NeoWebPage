@@ -2,7 +2,7 @@
   <div 
     class="article-board" 
     @click="transition_to_article">
-    <div class="article-title"> {{ article.title }} </div>
+    <div class="article-title"> {{ article[1].title }} </div>
     <div class="article-date"><time>{{ date }}</time></div>
   </div> 
 </template>
@@ -21,12 +21,12 @@ export default {
     }
   },
   mounted: function() {
-    const splitArray = this.article.base.replace('.json', '').split('-')
+    const splitArray = this.article[1].base.replace('.json', '').split('-')
     this.date = splitArray.slice(0, 3).join('-')
   },
   methods: {
     transition_to_article: function() {
-      const splitArray = this.article.base.replace('.json', '').split('-')
+      const splitArray = this.article[1].base.replace('.json', '').split('-')
       this.$router.push(
         `/blog/${splitArray.slice(0, 3).join('-')}/${splitArray
           .slice(3)
