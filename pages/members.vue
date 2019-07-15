@@ -89,7 +89,7 @@ export default {
         },
         {
           name: 'たくぼく',
-          picture_path: require('@/assets/images/member/notfound.jpg'),
+          picture_path: require('@/assets/images/member/takuboku.jpg'),
           detail: 'うるしぬりエンジニア。',
           like: '自転車とか車とか合唱とかタイ料理とか。',
           links: []
@@ -134,7 +134,7 @@ export default {
         },
         {
           name: '大川原 駿',
-          picture_path: require('@/assets/images/member/notfound.jpg'),
+          picture_path: require('@/assets/images/member/ookawara.jpg'),
           detail: '不発の大玉花火',
           like: '📻🚶✈️💤',
           links: []

@@ -39,7 +39,22 @@ export default {
       title: title,
       meta: [
         { hid: 'og:url', property: 'og:url', content: url },
-        { hid: 'og:title', property: 'og:title', content: title }
+        { hid: 'og:title', property: 'og:title', content: title },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.params.description
+        },
+        {
+          hid: 'keywords',
+          property: 'keywords',
+          content: this.params.keywords
+        },
+        {
+          hid: 'description',
+          property: 'description',
+          content: this.params.description
+        }
       ],
       link: [{ rel: 'canonical', href: url }]
     }

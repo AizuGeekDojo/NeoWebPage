@@ -56,7 +56,9 @@ module.exports = {
         hid: 'og:description',
         property: 'og:description',
         content: description
-      }
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: url }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

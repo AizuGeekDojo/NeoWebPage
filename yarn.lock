@@ -7161,7 +7161,7 @@ processmd@^4.4.2:
 
 "processmd_template_maker@github:nozo-moto/processmd_template_maker":
   version "1.0.0"
-  resolved "https://codeload.github.com/nozo-moto/processmd_template_maker/tar.gz/c9de5987c598ae66454a6c0f4f22bd23590a20a0"
+  resolved "https://codeload.github.com/nozo-moto/processmd_template_maker/tar.gz/e7a29bf6873fc764f813b88f0aadc982766daab6"
   dependencies:
     command-line-args "^5.1.1"
     command-line-usage "^6.0.2"
