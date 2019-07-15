@@ -1,7 +1,8 @@
 ---
 title: NuxtJSでブログを作る2
 created_at: 2019-07-22
-tags: NuxtJS, ブログ, processmd
+keywords: NuxtJS, ブログ, processmd
+description: processmdを用いて、markdownからnuxtを使ってブログ記事を作成する方法を解説しています。
 ---
 
 # 続き
