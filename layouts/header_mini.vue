@@ -31,6 +31,9 @@
       <nuxt-link
         to="/blog"
         @click.native="close_menu">ブログ</nuxt-link>
+      <nuxt-link
+        to="/members"
+        @click.native="close_menu">メンバー</nuxt-link>
       <a href="https://www.youtube.com/user/univaizu">Youtube</a>
     </div>
   </div>
