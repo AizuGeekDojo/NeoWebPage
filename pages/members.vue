@@ -198,11 +198,38 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/color';
-.top {
-  /*TODO heightは適当に調整する*/
-  .members {
-    width: 80%;
-    margin: 0 auto;
+.members {
+  div {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .top {
+    .members {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .top {
+    .members {
+      padding: 0;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+@media (min-width: 800px) {
+  .top {
+    .members {
+      padding: 0;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 }
 </style>
