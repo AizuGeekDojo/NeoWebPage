@@ -47,13 +47,9 @@ export default {
   border-width: 0px;
   box-shadow: 0px 0px 3px -1px #e5e5e5;
 
-  shadowcolor: #e5e5e5;
-  shadowradius: 3;
-  border-color: #cccccc;
-  borderradius: 0;
-
-  border-style: solid;
-  border-color: black;
+  border-top: #ffffff dashed 3px;
+  border-bottom: #ffffff dashed 3px;
+  cursor: pointer;
 
   text-align: center;
   justify-content: center;
@@ -98,9 +94,14 @@ export default {
       grid-column: 2 / 3;
       grid-row: 2 / 3;
 
-      font-size: 15x;
+      font-size: 15px;
       color: $fontColor;
     }
   }
+}
+.article-board:hover {
+  color: #fde9c1;
+  border-top: #f7b756 dashed 3px;
+  border-bottom: #f7b756 dashed 3px;
 }
 </style>
