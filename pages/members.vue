@@ -141,7 +141,7 @@ export default {
         },
         {
           name: 'TC',
-          picture_path: require('@/assets/images/member/notfound.jpg'),
+          picture_path: require('@/assets/images/member/chiba.jpg'),
           detail: 'バ美肉済',
           like: 'VR. 3D',
           links: []
