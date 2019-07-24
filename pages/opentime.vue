@@ -1,6 +1,7 @@
 <template>
   <div class="top">
     <div class="content">
+      <h2>開室日程</h2>
       <p>Aizu Geek Dojo は以下の時間にSAが開けています。</p>
       <p>使用の予約等をしたい際には、<a href="https://docs.google.com/forms/u/3/d/e/1FAIpQLSe_7ULD_MkPpy7Y8iSpfF8R6_mIUzGgd-ANeaAhFxDHmrhIfA/viewform">予約フォーム</a>からしてください。</p>
       <div class="opentime-calender">
