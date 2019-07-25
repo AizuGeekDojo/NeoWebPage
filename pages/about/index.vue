@@ -138,11 +138,17 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../style/color';
-h3 {
-  color: #010101;
-  border-bottom: solid 3px #00a5b1;
-}
+
 .top {
+  .content {
+    h3 {
+      color: #010101;
+      border-bottom: solid 3px #00a5b1;
+    }
+    ul {
+      padding: 0;
+    }
+  }
   .photo {
     position: relative;
     top: 2em;
