@@ -68,6 +68,7 @@ export default {
 @media (max-width: 600px) {
   .member {
     background-color: $hightLightColor;
+    overflow: hidden;
     border-right: 3vw solid $lineColor;
     height: 300px;
     width: 97vw;
@@ -96,7 +97,7 @@ export default {
       img {
         position: relative;
         object-fit: cover;
-        object-position: 90% 0%;
+        object-position: 70% 0%;
         width: 100%;
         height: 100%;
         background-size: cover;
@@ -120,7 +121,7 @@ export default {
       p {
         width: 100%;
         height: 100%;
-        word-break: keep-all;
+        word-break: break-all;
         margin: 0;
         padding: 0;
       }
@@ -176,10 +177,10 @@ export default {
       width: 100%;
       grid-column: 4/6;
       grid-row: 3/4;
-      word-break: keep-all;
       text-align: center;
       line-height: normal;
       font-weight: 400;
+      word-break: break-all;
       p {
         width: 100%;
         margin: 0;
