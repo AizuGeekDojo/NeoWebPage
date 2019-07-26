@@ -7,6 +7,9 @@
       <h3>{{ text.index["top-about"]["h3"] }}</h3>
       <h6>{{ text.index["top-about"]["h6-1"] }}</h6>
       <h6>{{ text.index["top-about"]["h6-2"] }}</h6>
+      <div>
+        <img src="../assets/images/openlab_2019.jpg">
+      </div>
     </div>
   </div>
 </template>
