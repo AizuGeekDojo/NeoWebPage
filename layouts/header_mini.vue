@@ -109,7 +109,7 @@ export default {
     }
   }
   .header-mini-dropdown-menu {
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     top: 60px;
     height: 100%;
