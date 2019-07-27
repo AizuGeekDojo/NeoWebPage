@@ -219,7 +219,7 @@ export default {
       margin: 0;
     }
     .member {
-      margin: 0;
+      margin: 4px 0;
     }
   }
 }
