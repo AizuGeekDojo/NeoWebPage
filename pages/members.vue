@@ -216,6 +216,7 @@ export default {
     }
     .content {
       padding: 0 0 45px 0;
+      margin: 0;
     }
   }
 }
