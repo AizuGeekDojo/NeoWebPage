@@ -67,6 +67,8 @@ export default {
 
 @media (max-width: 600px) {
   .member {
+    padding: 0;
+    margin: 0;
     background-color: $hightLightColor;
     overflow: hidden;
     border-right: 3vw solid $lineColor;
@@ -79,6 +81,7 @@ export default {
     grid-template-columns: 29.9% 16.1% 4% 5.902485% 33.195% 7.902485% 3%;
     // calc(0% + 7vw)
     .picture {
+      padding: 0;
       margin: 0;
       grid-column: 1/4;
       z-index: 1;

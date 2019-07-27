@@ -212,7 +212,7 @@ export default {
       margin: 0 auto;
     }
     .members.group {
-      margin: 6px auto;
+      margin: 6px 0;
     }
   }
 }
