@@ -209,13 +209,16 @@ export default {
   .top {
     .members {
       width: 100%;
-      margin: 0 auto;
+      margin: 0;
     }
     .members.group {
       margin: 4px 0;
     }
     .content {
       padding: 0 0 45px 0;
+      margin: 0;
+    }
+    .member {
       margin: 0;
     }
   }
