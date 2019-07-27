@@ -74,7 +74,7 @@ export default {
     width: 97vw;
     letter-spacing: normal;
     display: grid;
-    grid-template-rows: 34% 30% 11% 25%;
+    grid-template-rows: 33% 31% 11% 25%;
     color: $fontColor;
     grid-template-columns: 29.9% 16.1% 4% 5.902485% 33.195% 7.902485% 3%;
     // calc(0% + 7vw)
@@ -155,7 +155,7 @@ export default {
       padding: 0;
       vertical-align: middle;
       width: 100%;
-      font-size: 15px;
+      font-size: 14px;
       grid-row: 2/4;
       grid-column: 3/7;
       text-align: center;
