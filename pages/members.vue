@@ -212,7 +212,10 @@ export default {
       margin: 0 auto;
     }
     .members.group {
-      margin: 6px 0;
+      margin: 4px 0;
+    }
+    .content {
+      padding: 0 0 45px 0;
     }
   }
 }
