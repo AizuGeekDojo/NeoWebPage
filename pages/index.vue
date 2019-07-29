@@ -1,12 +1,12 @@
 <template>
   <div class="top">
     <div class="content">
-      <div class="top-img"><!-- TODO 画像を差し替え　 -->
-        <img src="../assets/images/introduce/image1.jpg">
+      <div class="news">
+        <div class="news-title">お知らせ</div>
+        <div class="news-content">
+          <img src="../assets/images/openlab_2019.jpg">
+        </div>
       </div>
-      <h3>{{ text.index["top-about"]["h3"] }}</h3>
-      <h6>{{ text.index["top-about"]["h6-1"] }}</h6>
-      <h6>{{ text.index["top-about"]["h6-2"] }}</h6>
     </div>
   </div>
 </template>
@@ -43,6 +43,33 @@ export default {
   img {
     width: 100%;
     height: auto;
+  }
+}
+.news {
+  padding: 0;
+  margin: 0 auto;
+  .news-title {
+    color: $fontColorWhite;
+    font-size: 30px;
+    background-color: $mainColor1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+  }
+
+  .news-content {
+    border: 1px solid $mainColor1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      padding: 0;
+      width: 80%;
+    }
   }
 }
 </style>
