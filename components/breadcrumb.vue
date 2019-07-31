@@ -42,6 +42,7 @@ export default {
   box-shadow: 0px 5px 7px #0000001c;
   top: -4px;
   min-height: 100%;
+  z-index: 3;
   height: auto;
   .breadcrumb-li {
     font-weight: 100;

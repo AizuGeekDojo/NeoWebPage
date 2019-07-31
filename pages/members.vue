@@ -5,6 +5,7 @@
       <div
         v-for="(member, index) in shuffle_member"
         :key="index"
+        class="members group"
       >
         <member
           :name="member.name"
@@ -28,7 +29,7 @@ export default {
     return {
       members: [
         {
-          name: '森本 望',
+          name: '森本望',
           picture_path: require('@/assets/images/member/nozomoto.jpg'),
           detail:
             'フロント、サーバーサイドからインフラまで色々やります。最近はDeepにLearningしてる。',
@@ -133,7 +134,7 @@ export default {
           ]
         },
         {
-          name: '大川原 駿',
+          name: '大川原駿',
           picture_path: require('@/assets/images/member/ookawara.jpg'),
           detail: '不発の大玉花火',
           like: '📻🚶✈️💤',
@@ -147,7 +148,7 @@ export default {
           links: []
         },
         {
-          name: 'じぶりん (gpioblink)',
+          name: 'じぶりん(gpioblink)',
           picture_path: require('@/assets/images/member/gpiobrink.jpg'),
           detail:
             '適当にvueでアプリ作るくらいの弱小もくもくマン。LTともくもく大好きなのでみんな誘ってね。タダ飯もよろしく！',
@@ -200,35 +201,52 @@ export default {
 @import '../style/color';
 .members {
   div {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin: 5px 0 5px 0;
   }
 }
+
 @media (max-width: 600px) {
   .top {
     .members {
       width: 100%;
-      margin: 0 auto;
+      margin: 0;
+    }
+    .members.group {
+      margin: 4px 0;
+    }
+    .content {
+      padding: 0 0 45px 0;
+      margin: 0;
+    }
+    .member {
+      margin: 4px 0;
     }
   }
 }
-@media (max-width: 800px) {
+@media (min-width: 600px) {
   .top {
     .members {
       padding: 0;
       width: 100%;
       margin: 0 auto;
     }
-  }
-}
-@media (min-width: 800px) {
-  .top {
-    .members {
-      padding: 0;
+    .members.content {
+      padding: 40px 0;
       width: 100%;
-      margin: 0 auto;
+      display: inline-flex;
+      position: relative;
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-width: 600px;
+      max-width: 1200px;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: space-around;
+    }
+    .members.group {
+      margin: 30px 15px;
+      border-radius: 10px;
+      flex-basis: 300px;
     }
   }
 }
