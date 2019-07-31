@@ -13,6 +13,9 @@
       <div class="header-topbar-youtube">
         <a href="https://www.youtube.com/user/univaizu">Youtube</a>
       </div>
+      <div class="header-topbar-privacy">
+        <nuxt-link to="/privacy_policy">プライバシーポリシー</nuxt-link>
+      </div>
       <!--<div-->
       <!--v-if="select_lang === ja"-->
       <!--class="header-topbar-english"-->
@@ -137,6 +140,10 @@ header {
       position: absolute;
       right: 230px;
     }
+    .header-topbar-privacy {
+      position: absolute;
+      right: 330px;
+    }
   }
 
   .header-topbar-english {
@@ -224,6 +231,20 @@ header {
     }
 
     .header-topbar-u-aizu {
+      font-size: small;
+      color: $fontColorWhite;
+
+      a {
+        text-decoration: none;
+        color: $fontColorWhite;
+      }
+      a:visited {
+        text-decoration: none;
+        color: $fontColorWhite;
+      }
+    }
+
+    .header-topbar-privacy {
       font-size: small;
       color: $fontColorWhite;
 

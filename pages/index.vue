@@ -49,6 +49,7 @@ export default {
   padding: 0;
   margin: 0 auto;
   .news-title {
+    margin: 0 auto;
     color: $fontColorWhite;
     font-size: 30px;
     background-color: $mainColor1;

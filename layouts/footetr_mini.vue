@@ -2,6 +2,9 @@
   <footer>
     <div class="footer-bar">
       <img src="../assets/uaizu.png">
+      <nuxt-link 
+        class="privacy" 
+        to="/privacy_policy">プライバシーポリシー</nuxt-link>
     </div>
   </footer>
 </template>
@@ -11,32 +14,39 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+@import '../style/color';
 footer {
   width: 100%;
   .footer-bar {
     width: 100%;
-    display: flex;
-    box-shadow: 0px -5px 7px #0000001c;
     height: 100px;
     text-align: center;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
     padding: 60px 0 40px;
+    border-top: 4px solid $subColor2;
+
+    box-shadow: 0px -5px 7px #0000001c;
+    background-color: $mainColor1;
+
     img {
       border-radius: 50px;
-      margin: 0 auto;
+      margin: 0 auto 20px auto;
       width: 100px;
       height: auto;
-    }
-  }
-}
-@import '../style/color';
-
-footer {
-  .footer-bar {
-    border-top: 4px solid $subColor2;
-    position: relative;
-    background-color: $mainColor1;
-    img {
       background-color: $hightLightColor;
+    }
+
+    a {
+      color: $fontColorWhite;
+      text-decoration: none;
+    }
+    a:visited {
+      text-decoration: none;
+      color: $fontColorWhite;
     }
   }
 }
