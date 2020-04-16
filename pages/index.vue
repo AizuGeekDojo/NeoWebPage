@@ -4,7 +4,6 @@
       <div class="news">
         <div class="news-title">お知らせ</div>
         <div class="news-content">
-          <img src="../assets/images/openlab_2019.jpg">
         </div>
       </div>
     </div>
