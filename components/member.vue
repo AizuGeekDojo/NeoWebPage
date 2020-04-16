@@ -84,7 +84,7 @@ export default {
     width: 97vw;
     letter-spacing: normal;
     display: grid;
-    grid-template-rows: 34% auto 11% 22%;
+    grid-template-rows: 13% auto 8% 22%;
     color: $fontColor;
     grid-template-columns: 29.9% 16.1% 4% 5.902485% 33.195% 7.902485% 3%;
     // calc(0% + 7vw)
@@ -150,18 +150,21 @@ export default {
       opacity: 0.7;
       div {
         margin: 0 auto;
+        width: 40px;
+        position: relative;
+        left: -25px;
       }
       .icon {
         width: 20px;
         height: 20px;
-        font-size: 25px;
+        font-size: 20px;
         color: $lastColor2;
       }
     }
 
     .detail {
       font-size: small;
-      margin: 0;
+      margin: auto 0;
       padding: 0;
       vertical-align: middle;
       width: 100%;
@@ -169,11 +172,11 @@ export default {
       grid-row: 2/4;
       grid-column: 3/7;
       text-align: justify;
-      line-height: normal;
       font-weight: 600;
       p {
         vertical-align: middle;
-        line-height: 2.2em;
+        letter-spacing: 0em;
+        line-height: 1.5em;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -183,15 +186,15 @@ export default {
     .like {
       opacity: 0.85;
       letter-spacing: 0.08em;
-      font-size: 10px;
-      width: 80%;
+      font-size: 8px;
+      margin: auto 0;
+      width: 100%;
       grid-column: 4/6;
       grid-row: 3/4;
       text-align: center;
-      line-height: 1.8em;
+      line-height: 1.4em;
       font-weight: 400;
       word-break: break-all;
-      margin: auto auto 0;
       p {
         width: 100%;
         margin: 0;
