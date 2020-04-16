@@ -1,13 +1,13 @@
 <template>
   <div class="top">
     <div class="content">
-      <p>Aizu Geek Dojo では以下のものを備品として揃えています。</p>
+      Aizu Geek Dojo では以下のものを備品として揃えています。
       <ul class="items">
         <li
           v-for="item in items"
           :key="item"
           class="item">
-          {{ item }}
+          <p>{{ item }}</p>
         </li>
       </ul>
     </div>
@@ -48,5 +48,11 @@ export default {
       display: inline-block;
     }
   }
+}
+p {
+  color: black;
+  border: solid 3px #00a5b1;
+  padding: 0.5em;
+  border-radius: 0.5em;
 }
 </style>
