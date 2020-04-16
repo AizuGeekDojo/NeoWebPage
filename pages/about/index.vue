@@ -24,7 +24,7 @@
           <h3>開室時間</h3>
           <ul>
             <li>
-              SA/TA 常駐時間を Aizu Geek Dojo Website から確認してください。（https://aizugeekdojo.github.io/）
+              SA/TA 常駐時間を Aizu Geek Dojo Website から確認してください。<br>(<a href="https://aizugeekdojo.github.io/">https://aizugeekdojo.github.io/</a>)
             </li>
             <li>
               安全管理上、機器の使用に長けた SA/TA が常駐している時間に利用してください。
@@ -58,7 +58,7 @@
               各機器使用講習会を受講し、所定の手技を取得した人は、開室時間外でも Dojo を利用することができます。
             </li>
             <li>
-              講習会の詳細は、Aizu Geek Dojo Website で確認してください。（https://aizugeekdojo.github.io/）
+              講習会の詳細は、Aizu Geek Dojo Website で確認してください。<br>(<a href="https://aizugeekdojo.github.io/">https://aizugeekdojo.github.io/</a>)
             </li>
           </ul>
         </li>

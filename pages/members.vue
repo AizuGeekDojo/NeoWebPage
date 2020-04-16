@@ -3,7 +3,7 @@
     <div
       class="members content">
       <hr>
-      <h2>SA ~Student Assistant~</h2>
+      <h2>SAメンバー ~Student Assistant~</h2>
       <div
         v-for="(member, index) in shuffle_sa_member"
         :key="index"
