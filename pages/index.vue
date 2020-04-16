@@ -51,7 +51,7 @@ export default {
   margin: 0 auto;
   .news-title {
     color: $fontColorWhite;
-    font-size: 23px;
+    font-size: 20px;
     background-color: $lastColor2;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
