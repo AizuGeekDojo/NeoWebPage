@@ -1,10 +1,13 @@
 <template>
   <div class="top">
     <div class="content">
-      <div 
-        v-for="(article, index) in articles" 
-        :key="index">
-        <article_board :article="article" />        
+      <h2>ブログ</h2>
+      <div class="blog">
+        <div 
+          v-for="(article, index) in articles" 
+          :key="index">
+          <article_board :article="article" />        
+        </div>
       </div>
     </div>
   </div>
@@ -39,23 +42,11 @@ export default {
 
 <style lang="scss" scoped>
 .top {
-  width: auto;
   height: auto;
   .content {
     width: 100%;
-    padding: 0;
-    div {
-      @media (max-width: 600px) {
-        width: 95%;
-      }
-      @media (min-width: 600px) {
-        width: 80%;
-      }
-      margin-top: 5px;
-      margin-bottom: 0px;
-      margin-left: auto;
-      margin-right: auto;
-      justify-content: center;
+    .blog {
+      width: 100%;
     }
   }
 }

@@ -36,10 +36,11 @@ export default {
 @import '../style/color';
 .breadcrumb-ul {
   margin: 0;
+  padding: 0 0 0 10px;
   display: flex;
   flex-direction: row;
   position: relative;
-  box-shadow: 0px 5px 7px #0000001c;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
   top: -4px;
   min-height: 100%;
   z-index: 3;
@@ -51,24 +52,17 @@ export default {
     list-style: none;
     .breadcrumb-li-links-home {
       img {
-        height: 22px;
-        width: 22px;
+        top: 2px;
+        position: relative;
+        height: 16px;
+        width: 16px;
       }
     }
     .breadcrumb-li-links-home:after {
       content: '|';
       display: inline-block;
-      font-size: x-large;
       align-items: center;
-      margin: 0 30px;
-    }
-    .breadcrumb-li-links {
-      font-size: larger;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-    }
-    .breadcrumb-li-links:last-child:after {
-      content: none;
+      margin: 0 10px;
     }
   }
   .breadcrumb-li-pages {
@@ -77,9 +71,9 @@ export default {
     align-items: center;
     list-style: none;
     .breadcrumb-li-links {
-      font-size: larger;
+      font-size: 16px;
       text-transform: uppercase;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.05em;
     }
     .breadcrumb-li-links:last-child:after {
       content: none;
@@ -88,9 +82,9 @@ export default {
   .breadcrumb-li-pages:after {
     content: '/';
     display: inline-block;
-    font-size: x-large;
+    font-size: 18px;
     align-items: center;
-    margin: 0 30px;
+    margin: 0 10px;
   }
 }
 /deep/ a,
@@ -107,7 +101,7 @@ a:visited {
 }
 
 .breadcrumb-ul {
-  border-top: 4px solid $subColor2;
+  border-top: 3px solid $subColor2;
   background-color: $hightLightColor;
   .breadcrumb-li {
     a {

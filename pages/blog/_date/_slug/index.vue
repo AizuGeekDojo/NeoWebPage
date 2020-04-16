@@ -3,9 +3,9 @@
     <div class="content">
       <div class="article-content">
         <div class="top-content"> 
-          <div class="title">{{ title }}</div>
+          <h2 class="title">{{ title }}</h2>
           <div class="post-meta">
-            <div class="post-meta-date">日付: <time>{{ params.date }}</time></div>
+            <div class="post-meta-date"><time>{{ params.date }}</time></div>
           </div>
         </div>
         <div 
@@ -90,12 +90,11 @@ export default {
 
 .content {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px 20px;
   @media (max-width: 600px) {
-    width: 95%;
+    width: 100%;
   }
   @media (min-width: 600px) {
-    width: 80%;
   }
   .article-content {
     margin-top: 20px;
@@ -110,51 +109,24 @@ export default {
       height: auto;
 
       @media (max-width: 600px) {
-        display: grid;
-        grid-template-rows: 75% 25%;
-        .title {
-          margin-top: 5px;
-          margin-bottom: 5px;
-          font-size: 20px;
-          line-height: normal;
-        }
-
         .post-meta {
-          display: grid;
-          margin: 0 auto;
+          font-size: 16px;
+          margin: 0 0 auto 0;
           .post-meta-date {
             margin: 0 auto;
           }
         }
       }
-      @media (min-width: 600px) {
-        display: grid;
-        grid-template-columns: 60% 40%;
-        .title {
-          margin-top: 10px;
-          margin-bottom: 10px;
-          margin-left: 50px;
-          font-size: 40px;
-        }
 
+      @media (min-width: 600px) {
         .post-meta {
-          display: grid;
-          grid-template-rows: 50%;
+          font-size: 16px;
+          margin: 0 0 auto 0;
           .post-meta-date {
-            grid-row: 2 / 3;
+            margin: 0 auto;
           }
         }
       }
-
-      background: white;
-
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-
-      border-width: 1px;
-      border-style: solid;
-      border-color: black;
     }
     .body-content {
       width: auto;
@@ -180,16 +152,20 @@ export default {
       @media (min-width: 600px) {
         line-height: inherit;
         /deep/ h1 {
-          font-size: 40px;
-        }
-        /deep/ h2 {
-          font-size: 35px;
-        }
-        /deep/ h3 {
           font-size: 30px;
         }
-        /deep/ h4 {
+        /deep/ h2 {
+          font-size: 28px;
+        }
+        /deep/ h3 {
           font-size: 25px;
+        }
+        /deep/ h4 {
+          font-size: 22px;
+        }
+
+        /deep/ pre {
+          font-size: 14px;
         }
       }
 

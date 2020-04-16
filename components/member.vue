@@ -59,10 +59,18 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/color';
+
+.content {
+  width: auto;
+}
+
 .member {
-  box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.315);
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.315);
   padding: 0;
   margin: 0;
+  p {
+    text-indent: 0 !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -200,47 +208,57 @@ export default {
     padding: 30px 20px;
     color: $fontColor;
     background-color: $hightLightColor;
-    // background-color: $footerColor;
-    height: 450px;
-    width: 300px;
+    height: 390px;
+    width: 250px;
     display: grid;
-    grid-template-rows: 32% 13% 35% 15% 5%;
+    grid-template-rows: 155px 30px auto auto 35px;
     grid-template-columns: 27% 46% 27%;
     text-align: center;
     vertical-align: top;
     .picture {
       grid-row: 1/2;
-      grid-column: 2/3;
+      grid-column: 1/4;
       text-align: center;
       img {
+        object-fit: cover;
         border: 4px solid $hightLightColor;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.424);
-        height: auto;
-        width: 100%;
+        height: 140px;
+        width: 140px;
         background-size: cover;
         border-radius: 50%;
       }
     }
     .name {
-      vertical-align: top;
+      vertical-align: center;
       color: $footerColor;
       font-weight: 900;
       grid-row: 2/3;
       grid-column: 1/4;
       text-align: center;
-      margin: 0 auto;
+      margin: 3px 0;
       p {
+        font-size: 18px;
+        margin: 0;
         width: 100%;
       }
     }
     .detail {
-      padding: 0 5px;
+      padding: 20px 5px 5px;
+      margin: 0 auto;
+      width: auto;
+      min-height: 80px;
+      line-height: 2em;
       letter-spacing: normal;
-      text-align: center;
-      word-break: normal;
+      text-align: justify;
       grid-row: 3/4;
       grid-column: 1/4;
       font-size: 15px;
+      word-break: normal;
+      * {
+        margin: 0;
+        padding: 0;
+      }
     }
     .like {
       font-size: 12px;
@@ -251,6 +269,10 @@ export default {
       line-height: 2em;
       opacity: 0.7;
       font-weight: 500;
+      * {
+        margin: 0;
+        padding: 0;
+      }
     }
     .links {
       grid-row: 5/6;

@@ -10,12 +10,15 @@
 
       <ul >
         <li>
-          <h3>場所</h3>  研究棟南入口そば１階１６３
+          <h3>場所</h3>
+          <p>研究棟南入口そば１階１６３</p>
         </li>
         <li>
           <h3>利用資格</h3>
-          本学の学生、教職員
-          その他グローバル推進本部スーパーグローバル大学推進室長が許可した者
+          <ul>
+            <li>本学の学生、教職員</li>
+            <li>その他グローバル推進本部スーパーグローバル大学推進室長が許可した者</li>
+          </ul>
         </li>
         <li>
           <h3>開室時間</h3>
@@ -97,18 +100,9 @@
           </ul>
         </li>
         <li>
-          <h3>連絡先</h3> グローバル推進本部スーパーグローバル大学（SGU）推進室
-          <ul>
-            <li>
-              e-mail:   aizugeekdojo@u-aizu.ac.jp、 もしくは sgu-adm@u-aizu.ac.jp
-            </li>
-            <li>
-              TEL: 0242-37-2701(内線: 3801)
-            </li>
-            <li>
-              FAX: 0242-37-2766・Website: https://aizugeekdojo.github.io/
-            </li>
-          </ul>
+          <h3>連絡先</h3>
+          <p>グローバル推進本部スーパーグローバル大学推進室(SGU)</p>
+          <p>e-mail: <a href="mailto:aizugeekdojo@u-aizu.ac.jp">aizugeekdojo@u-aizu.ac.jp</a> もしくは<a href="mailto:sgu-adm@u-aizu.ac.jp">sgu-adm@u-aizu.ac.jp</a><br>TEL: 0242-37-2701(内線: 3801)<br>FAX: 0242-37-2766<br>Website: <a href="https://aizugeekdojo.github.io/">https://aizugeekdojo.github.io/</a></p>
         </li>
       </ul>
       <div class="photo">
@@ -140,15 +134,6 @@ export default {
 @import '../../style/color';
 
 .top {
-  .content {
-    h3 {
-      color: #010101;
-      border-bottom: solid 3px #00a5b1;
-    }
-    ul {
-      padding: 0;
-    }
-  }
   .photo {
     position: relative;
     top: 2em;
