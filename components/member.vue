@@ -80,7 +80,7 @@ export default {
     background-color: $hightLightColor;
     overflow: hidden;
     border-right: 3vw solid $lineColor;
-    height: 300px;
+    height: 200px;
     width: 97vw;
     letter-spacing: normal;
     display: grid;
@@ -118,7 +118,7 @@ export default {
     .name {
       grid-row: 1/2;
       grid-column: 2/7;
-      font-size: 70px;
+      font-size: 50px;
       width: 100%;
       padding: 0;
       margin: 0;

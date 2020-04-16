@@ -3,7 +3,7 @@
     <div
       class="members content">
       <hr>
-      <h2>SAメンバー ~Student Assistant~</h2>
+      <h2>SAメンバー<br>~Student Assistant~</h2>
       <div
         v-for="(member, index) in shuffle_sa_member"
         :key="index"
@@ -291,6 +291,12 @@ export default {
       height: 5px;
       color: $mainColor1;
       background-color: $mainColor1;
+    }
+    h2 {
+      width: 100%;
+      text-align: center;
+      background-color: transparent;
+      margin: 0 0 25px;
     }
   }
 }
