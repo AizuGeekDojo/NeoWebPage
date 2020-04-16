@@ -86,9 +86,9 @@ $fontColorWhite: #fcfcfc;
 }
 @media (max-width: 600px) {
   .content {
-    font-size: medium;
-    letter-spacing: 0.01em;
-    line-height: 2.2em;
+    font-size: 14px;
+    letter-spacing: 0em;
+    line-height: 1.8em;
     min-height: 500px;
     background-color: $lightColor;
     display: flex;
@@ -102,13 +102,12 @@ $fontColorWhite: #fcfcfc;
     word-break: break-word;
     overflow-wrap: normal;
 
-
     a {
+      margin: 15px;
       color: $fontColor;
-      margin: 20px;
     }
     p {
-      margin: 20px;
+      margin: 15px;
       color: $fontColor;
       text-indent: 25px each-line;
     }
