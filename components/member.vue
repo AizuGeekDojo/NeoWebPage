@@ -84,7 +84,7 @@ export default {
     width: 97vw;
     letter-spacing: normal;
     display: grid;
-    grid-template-rows: 34% 30% 11% 25%;
+    grid-template-rows: 34% auto 11% 22%;
     color: $fontColor;
     grid-template-columns: 29.9% 16.1% 4% 5.902485% 33.195% 7.902485% 3%;
     // calc(0% + 7vw)
@@ -154,7 +154,6 @@ export default {
       .icon {
         width: 20px;
         height: 20px;
-        margin-right: 10px;
         font-size: 25px;
         color: $lastColor2;
       }
@@ -169,29 +168,30 @@ export default {
       font-size: 13px;
       grid-row: 2/4;
       grid-column: 3/7;
-      text-align: center;
+      text-align: justify;
       line-height: normal;
       font-weight: 600;
       p {
         vertical-align: middle;
-        line-height: 1.6em;
+        line-height: 2.2em;
         width: 100%;
         margin: 0;
-        padding: 0 5px;
+        padding: 0;
       }
     }
 
     .like {
       opacity: 0.85;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
       font-size: 10px;
-      width: 100%;
+      width: 80%;
       grid-column: 4/6;
       grid-row: 3/4;
       text-align: center;
-      line-height: normal;
+      line-height: 1.8em;
       font-weight: 400;
       word-break: break-all;
+      margin: auto auto 0;
       p {
         width: 100%;
         margin: 0;
@@ -241,6 +241,7 @@ export default {
         font-size: 18px;
         margin: 0;
         width: 100%;
+        padding: 0;
       }
     }
     .detail {

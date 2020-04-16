@@ -285,6 +285,13 @@ export default {
     .member {
       margin: 4px 0;
     }
+    hr {
+      width: 30px;
+      margin: 50px 35% 40px;
+      height: 5px;
+      color: $mainColor1;
+      background-color: $mainColor1;
+    }
   }
 }
 @media (min-width: 600px) {
@@ -317,8 +324,6 @@ export default {
         height: 5px;
         color: $mainColor1;
         background-color: $mainColor1;
-        border-top-left-radius: 2.5px;
-        border-top-right-radius: 2.5px;
       }
     }
     .members.group {

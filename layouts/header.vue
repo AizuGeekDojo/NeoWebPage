@@ -132,9 +132,9 @@ header {
 
     .header-topbar-home {
       color: $fontColorWhite;
-      font-size: 26px;
+      font-size: 24px;
+      font-weight: 900;
       letter-spacing: 0em;
-      margin: 0 0 0 10px;
       a {
         color: $fontColorWhite;
         text-decoration: none;

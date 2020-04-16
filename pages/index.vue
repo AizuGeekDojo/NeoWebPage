@@ -45,21 +45,22 @@ export default {
     height: auto;
   }
 }
+
 .news {
   padding: 0;
   margin: 0 auto;
   .news-title {
-    margin: 0 auto;
     color: $fontColorWhite;
-    font-size: 30px;
-    background-color: $mainColor1;
+    font-size: 23px;
+    background-color: $lastColor2;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    padding: 10px;
+    padding: 8px 15px;
+    text-indent: 5px each-line;
   }
 
   .news-content {
-    border: 1px solid $mainColor1;
+    border: 1px solid $lastColor2;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     text-align: center;
@@ -69,7 +70,6 @@ export default {
     justify-content: center;
     img {
       padding: 0;
-      width: 80%;
     }
   }
 }
