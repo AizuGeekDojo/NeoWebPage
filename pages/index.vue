@@ -4,7 +4,15 @@
       <div class="news">
         <div class="news-title">お知らせ</div>
         <div class="news-content">
-          <img src="../assets/images/openlab_2019.jpg">
+          <p>
+            新型コロナウイルス感染対策の一環としてGeek Dojoの利用についても感染対策措置を講じることとします。<br/>
+            詳細については下記の資料をご覧ください。<br/>
+            <a href="../AizuGeekDojoResToCOVID19.pdf">Aizu Geek Dojoの利用について</a><br/>
+            <br/>
+            We will take a countermeasure for the infection in Aizu Geek Dojo as a part of University’s action of COVID-19.<br/>
+            Please see the following material for details.<br/>
+            <a href="../AizuGeekDojoResToCOVID19en.pdf">Use of Aizu Geek Dojo</a><br/>
+          </p>
         </div>
       </div>
     </div>
