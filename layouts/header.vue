@@ -2,7 +2,9 @@
   <header>
     <div class="header-topbar">
       <div class="header-topbar-logo">
-        <a href="/"><img src="../assets/logo.png"></a>
+        <a href="/">
+          <img src="../assets/logo.png" />
+        </a>
       </div>
       <div class="header-topbar-home">
         <nuxt-link to="/">Aizu Geek Dojo</nuxt-link>
@@ -18,17 +20,17 @@
           <nuxt-link to="/privacy_policy">プライバシーポリシー</nuxt-link>
         </div>
       </div>
-      <div
+      <!-- <div
         v-if="select_lang === ja"
         class="header-topbar-english lang"
         @click="changeLang">English</div>
       <div
         v-else
         class="header-topbar-english lang"
-        @click="changeLang">日本語</div>
+      @click="changeLang">日本語</div>-->
     </div>
     <div class="header-center">
-      <img src="../assets/images/introduce/image7.jpg"/>
+      <img src="../assets/images/introduce/image7.jpg" />
     </div>
     <div class="header-secondbar">
       <div class="header-secondbar-links">
@@ -56,7 +58,7 @@
       </div>
     </div>
     <div class="header-breadcrumb">
-      <breadcrumb :breadcrumbs="breadcrumbs"/>
+      <breadcrumb :breadcrumbs="breadcrumbs" />
     </div>
   </header>
 </template>
@@ -147,7 +149,7 @@ header {
       margin: 0 0 0 auto;
       flex-flow: row nowrap;
       position: relative;
-      right: 70px;
+      right: 20px;
       justify-content: space-between;
       .item {
         color: $fontColorWhite;
@@ -155,8 +157,11 @@ header {
         text-align: center;
         a {
           color: $fontColorWhite;
-          vertival-align: text-bottom;
+          display: block;
           text-decoration: none;
+        }
+        a:hover {
+          opacity: 0.7;
         }
       }
       img {
@@ -214,16 +219,19 @@ header {
         max-height: 80px;
         font-size: 15px;
         letter-spacing: 0.1em;
+        position: relative;
         width: 20%;
 
         a {
+          height: 100%;
           width: 100%;
           text-decoration: none;
           color: $fontColorWhite;
+          display: block;
         }
-      }
-      .header-secondbar-link:hover {
-        background-color: rgba(255, 255, 255, 0.2);
+        a:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+        }
       }
     }
   }
