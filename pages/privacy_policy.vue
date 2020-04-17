@@ -6,7 +6,7 @@
         :key="index"
         class="message">
         <div class="title">{{ message.title }}</div>
-        <div class="body">{{ message.body }}</div>
+        <p class="body">{{ message.body }}</p>
       </div>
     </div>
   </div>
@@ -67,9 +67,10 @@ export default {
     .message {
       .title {
         font-size: 20px;
-        background-color: $mainColor1;
+        background-color: $lastColor2;
         color: $fontColorWhite;
         border-radius: 5px;
+        margin: 10px 0;
       }
       .body {
         line-height: normal;

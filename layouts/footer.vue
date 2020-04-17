@@ -21,19 +21,19 @@ footer {
   box-shadow: 0px -5px 7px #0000001c;
   border-top: 4px solid $subColor2;
   width: 100%;
-  height: 200px;
+  height: 150px;
   position: relative;
   background-color: $mainColor1;
 
   .footer-bar {
-    top: 65px;
+    top: 40px;
     position: relative;
     display: flex;
     height: 100%;
     width: 100%;
     .footer_logo {
+      margin: 0 0 0 100px;
       img {
-        margin-left: 50px;
         width: 100px;
         height: auto;
         border-radius: 50px;
@@ -47,7 +47,7 @@ footer {
       font-size: small;
       letter-spacing: 0.1em;
       color: $fontColorWhite;
-      margin: 30px;
+      margin: 50px;
     }
   }
 }

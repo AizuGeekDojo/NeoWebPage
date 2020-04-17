@@ -26,7 +26,7 @@
         to="/items"
         @click.native="close_menu">備品</nuxt-link>
       <nuxt-link
-        to="underconstruct"
+        to="/instraction"
         @click.native="close_menu">講習会</nuxt-link>
       <nuxt-link
         to="/blog"
@@ -96,9 +96,9 @@ export default {
       a {
         text-decoration: none;
         color: $hightLightColor;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.05em;
       }
-      font-size: larger;
+      font-size: 23px;
       font-weight: bold;
       flex-grow: 2;
       width: 50%;
@@ -131,7 +131,8 @@ export default {
       text-decoration: none;
     }
     :hover {
-      border-bottom: $subColor2 dashed 3px;
+      border-bottom: $lastColor3 solid 1px;
+      margin: 20px 20px 19px 20px;
       color: $lastColor3;
     }
     a:visited {

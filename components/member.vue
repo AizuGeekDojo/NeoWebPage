@@ -59,10 +59,18 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/color';
+
+.content {
+  width: auto;
+}
+
 .member {
-  box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.315);
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.315);
   padding: 0;
   margin: 0;
+  p {
+    text-indent: 0 !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -72,11 +80,11 @@ export default {
     background-color: $hightLightColor;
     overflow: hidden;
     border-right: 3vw solid $lineColor;
-    height: 300px;
+    height: 200px;
     width: 97vw;
     letter-spacing: normal;
     display: grid;
-    grid-template-rows: 34% 30% 11% 25%;
+    grid-template-rows: 13% auto 8% 22%;
     color: $fontColor;
     grid-template-columns: 29.9% 16.1% 4% 5.902485% 33.195% 7.902485% 3%;
     // calc(0% + 7vw)
@@ -110,7 +118,7 @@ export default {
     .name {
       grid-row: 1/2;
       grid-column: 2/7;
-      font-size: 70px;
+      font-size: 50px;
       width: 100%;
       padding: 0;
       margin: 0;
@@ -142,46 +150,49 @@ export default {
       opacity: 0.7;
       div {
         margin: 0 auto;
+        width: 40px;
+        position: relative;
+        left: -25px;
       }
       .icon {
         width: 20px;
         height: 20px;
-        margin-right: 10px;
-        font-size: 25px;
+        font-size: 20px;
         color: $lastColor2;
       }
     }
 
     .detail {
       font-size: small;
-      margin: 0;
+      margin: auto 0;
       padding: 0;
       vertical-align: middle;
       width: 100%;
       font-size: 13px;
       grid-row: 2/4;
       grid-column: 3/7;
-      text-align: center;
-      line-height: normal;
+      text-align: justify;
       font-weight: 600;
       p {
         vertical-align: middle;
-        line-height: 1.6em;
+        letter-spacing: 0em;
+        line-height: 1.5em;
         width: 100%;
         margin: 0;
-        padding: 0 5px;
+        padding: 0;
       }
     }
 
     .like {
       opacity: 0.85;
-      letter-spacing: 0.1em;
-      font-size: 10px;
+      letter-spacing: 0.08em;
+      font-size: 8px;
+      margin: auto 0;
       width: 100%;
       grid-column: 4/6;
       grid-row: 3/4;
       text-align: center;
-      line-height: normal;
+      line-height: 1.4em;
       font-weight: 400;
       word-break: break-all;
       p {
@@ -200,47 +211,58 @@ export default {
     padding: 30px 20px;
     color: $fontColor;
     background-color: $hightLightColor;
-    // background-color: $footerColor;
-    height: 450px;
-    width: 300px;
+    height: 390px;
+    width: 250px;
     display: grid;
-    grid-template-rows: 32% 13% 35% 15% 5%;
+    grid-template-rows: 155px 30px auto auto 35px;
     grid-template-columns: 27% 46% 27%;
     text-align: center;
     vertical-align: top;
     .picture {
       grid-row: 1/2;
-      grid-column: 2/3;
+      grid-column: 1/4;
       text-align: center;
       img {
+        object-fit: cover;
         border: 4px solid $hightLightColor;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.424);
-        height: auto;
-        width: 100%;
+        height: 140px;
+        width: 140px;
         background-size: cover;
         border-radius: 50%;
       }
     }
     .name {
-      vertical-align: top;
+      vertical-align: center;
       color: $footerColor;
       font-weight: 900;
       grid-row: 2/3;
       grid-column: 1/4;
       text-align: center;
-      margin: 0 auto;
+      margin: 3px 0;
       p {
+        font-size: 18px;
+        margin: 0;
         width: 100%;
+        padding: 0;
       }
     }
     .detail {
-      padding: 0 5px;
+      padding: 20px 5px 5px;
+      margin: 0 auto;
+      width: auto;
+      min-height: 80px;
+      line-height: 2em;
       letter-spacing: normal;
-      text-align: center;
-      word-break: normal;
+      text-align: justify;
       grid-row: 3/4;
       grid-column: 1/4;
       font-size: 15px;
+      word-break: normal;
+      * {
+        margin: 0;
+        padding: 0;
+      }
     }
     .like {
       font-size: 12px;
@@ -251,6 +273,10 @@ export default {
       line-height: 2em;
       opacity: 0.7;
       font-weight: 500;
+      * {
+        margin: 0;
+        padding: 0;
+      }
     }
     .links {
       grid-row: 5/6;

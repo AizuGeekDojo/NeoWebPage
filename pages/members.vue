@@ -2,13 +2,32 @@
   <div class="top">
     <div
       class="members content">
+      <hr>
+      <h2>SAメンバー<br>~Student Assistant~</h2>
       <div
-        v-for="(member, index) in shuffle_member"
+        v-for="(member, index) in shuffle_sa_member"
         :key="index"
         class="members group"
       >
         <member
           :name="member.name"
+          :status="member.status"
+          :picture_path="member.picture_path"
+          :detail="member.detail"
+          :like="member.like"
+          :links="member.links"
+        />
+      </div>
+      <hr>
+      <h2>歴代OB</h2>
+      <div
+        v-for="(member, index) in shuffle_ob_member"
+        :key="index+100"
+        class="members group"
+      >
+        <member
+          :name="member.name"
+          :status="member.status"
           :picture_path="member.picture_path"
           :detail="member.detail"
           :like="member.like"
@@ -30,6 +49,7 @@ export default {
       members: [
         {
           name: '森本望',
+          status: 'ob',
           picture_path: require('@/assets/images/member/nozomoto.jpg'),
           detail:
             'フロント、サーバーサイドからインフラまで色々やります。最近はDeepにLearningしてる。',
@@ -54,6 +74,7 @@ export default {
         },
         {
           name: '並木優祐',
+          status: 'sa',
           picture_path: require('@/assets/images/member/ynamiki.jpeg'),
           detail: 'GeekDojoの道場主？',
           like: '',
@@ -67,6 +88,7 @@ export default {
         },
         {
           name: '芳賀史都',
+          status: 'ob',
           picture_path: require('@/assets/images/member/hatobus.png'),
           detail: '🤔',
           like: 'go python 車 菜々家の銀ひらすの西京焼き定食',
@@ -90,13 +112,15 @@ export default {
         },
         {
           name: 'たくぼく',
+          status: 'sa',
           picture_path: require('@/assets/images/member/takuboku.jpg'),
           detail: 'うるしぬりエンジニア。',
           like: '自転車とか車とか合唱とかタイ料理とか。',
           links: []
         },
         {
-          name: 'i80486dx2',
+          name: 'ビートル',
+          status: 'sa',
           picture_path: require('@/assets/images/member/sukegawa.jpg'),
           detail: 'キーワード：RaspberryPi , IoT',
           like: 'golang, python',
@@ -110,6 +134,7 @@ export default {
         },
         {
           name: '星裕也',
+          status: 'sa',
           picture_path: require('@/assets/images/member/hosi.jpg'),
           detail: 'Geek二年目',
           like: '',
@@ -117,10 +142,16 @@ export default {
         },
         {
           name: '橋本志穂実',
+          status: 'sa',
           picture_path: require('@/assets/images/member/fironn.jpg'),
-          detail: '',
-          like: '',
+          detail: 'フロントにアプリに電子工作、もりだくさん🐡',
+          like: 'IoT, React.js, Python',
           links: [
+            {
+              src: 'https://ha-shii.com/',
+              prefix: 'fas',
+              icon: 'blog'
+            },
             {
               src: 'https://www.facebook.com/shihomi.hashimoto.35',
               prefix: 'fab',
@@ -135,6 +166,7 @@ export default {
         },
         {
           name: '大川原駿',
+          status: 'sa',
           picture_path: require('@/assets/images/member/ookawara.jpg'),
           detail: '不発の大玉花火',
           like: '📻🚶✈️💤',
@@ -142,6 +174,7 @@ export default {
         },
         {
           name: 'TC',
+          status: 'sa',
           picture_path: require('@/assets/images/member/chiba.jpg'),
           detail: 'バ美肉済',
           like: 'VR. 3D',
@@ -149,6 +182,7 @@ export default {
         },
         {
           name: 'じぶりん(gpioblink)',
+          status: 'sa',
           picture_path: require('@/assets/images/member/gpiobrink.jpg'),
           detail:
             '適当にvueでアプリ作るくらいの弱小もくもくマン。LTともくもく大好きなのでみんな誘ってね。タダ飯もよろしく！',
@@ -165,6 +199,20 @@ export default {
               icon: 'github'
             }
           ]
+        },
+        {
+          name: '髙橋麻衣',
+          status: 'sa',
+          picture_path: require('@/assets/images/member/azagi.jpg'),
+          detail: '',
+          like: '',
+          links: [
+            {
+              src: 'https://www.facebook.com/profile.php?id=100035453412465',
+              prefix: 'fab',
+              icon: 'facebook'
+            }
+          ]
         }
       ],
       breadcrumbs: [
@@ -173,18 +221,34 @@ export default {
           path: '/members'
         }
       ],
-      shuffle_member: []
+      shuffle_sa_member: [],
+      shuffle_ob_member: []
     }
   },
   mounted: function() {
-    this.shuffle_member = this.shuffle()
+    this.shuffle_sa_member = this.shuffle_sa()
+    this.shuffle_ob_member = this.shuffle_ob()
   },
   created() {
     this.$store.commit('change_page', this.breadcrumbs)
   },
   methods: {
-    shuffle: function() {
-      let array = this.members
+    shuffle_sa: function() {
+      let array = this.members.filter(function(item) {
+        return item.status === 'sa'
+      })
+      for (let i = array.length - 1; i > 0; i--) {
+        let r = Math.floor(Math.random() * (i + 1))
+        let tmp = array[i]
+        array[i] = array[r]
+        array[r] = tmp
+      }
+      return array
+    },
+    shuffle_ob: function() {
+      let array = this.members.filter(function(item) {
+        return item.status === 'ob'
+      })
       for (let i = array.length - 1; i > 0; i--) {
         let r = Math.floor(Math.random() * (i + 1))
         let tmp = array[i]
@@ -221,6 +285,19 @@ export default {
     .member {
       margin: 4px 0;
     }
+    hr {
+      width: 30px;
+      margin: 50px 35% 40px;
+      height: 5px;
+      color: $mainColor1;
+      background-color: $mainColor1;
+    }
+    h2 {
+      width: 100%;
+      text-align: center;
+      background-color: transparent;
+      margin: 0 0 25px;
+    }
   }
 }
 @media (min-width: 600px) {
@@ -242,6 +319,18 @@ export default {
       justify-content: center;
       align-items: flex-start;
       align-content: space-around;
+      h2 {
+        width: 100%;
+        text-align: center;
+        background-color: transparent;
+      }
+      hr {
+        width: 30px;
+        margin: 50px 35% 40px;
+        height: 5px;
+        color: $mainColor1;
+        background-color: $mainColor1;
+      }
     }
     .members.group {
       margin: 30px 15px;

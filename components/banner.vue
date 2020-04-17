@@ -35,7 +35,6 @@ export default {}
 @media (max-width: 600px) {
   .banner {
     padding: 30px 10px;
-    // top: 100px;
     background-color: $mainColor1;
     position: relative;
     .banner-ul {
@@ -54,7 +53,6 @@ export default {}
 @media (min-width: 600px) {
   .banner {
     padding: 30px 10px;
-    // top: 100px;
     background-color: $mainColor1;
     position: relative;
     .banner-ul {

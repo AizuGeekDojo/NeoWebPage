@@ -40,68 +40,45 @@ export default {
 <style lang="scss" scoped>
 @import '../style/color.scss';
 .article-board {
-  height: 100px;
-  width: 100%;
-  background-color: white;
-
-  border-width: 0px;
-  box-shadow: 0px 0px 3px -1px #e5e5e5;
-
-  border-top: #ffffff dashed 3px;
-  border-bottom: #ffffff dashed 3px;
+  margin: 10px 0;
+  padding: 18px 25px;
+  box-shadow: 1px 1px 4px $fontColor;
   cursor: pointer;
+  text-align: left;
+  vertival-align: center;
+}
 
-  text-align: center;
-  justify-content: center;
+@media (max-width: 600px) {
+  grid-template-columns: 70% 30%;
 
-  display: grid;
-  @media (max-width: 600px) {
-    grid-template-columns: 70% 30%;
-    line-height: normal;
-
-    .article-title {
-      display: flex;
-      align-items: center;
-    }
-
-    .article-date {
-      margin: 0 auto;
-      font-size: 15px;
-      color: $fontColor;
-
-      align-items: center;
-      display: flex;
-    }
+  .article-title {
+    display: flex;
+    align-items: center;
   }
-  @media (min-width: 600px) {
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 60% 40%;
 
-    .article-title {
-      grid-row: 1 / 2;
-      grid-column: 1 / 3;
+  .article-date {
+    margin: 0 auto;
+    font-size: 15px;
+    color: $fontColor;
 
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-
-      font-size: 20px;
-      color: $fontColor;
-    }
-
-    .article-date {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-
-      font-size: 15px;
-      color: $fontColor;
-    }
+    align-items: center;
+    display: flex;
   }
 }
+
+@media (min-width: 600px) {
+  .article-title {
+    font-size: 21px;
+    color: $fontColor;
+  }
+
+  .article-date {
+    font-size: 12px;
+    color: $fontColor;
+  }
+}
+
 .article-board:hover {
-  color: #fde9c1;
-  border-top: #f7b756 dashed 3px;
-  border-bottom: #f7b756 dashed 3px;
+  box-shadow: 2px 2px 4px $fontColor;
 }
 </style>

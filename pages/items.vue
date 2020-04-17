@@ -1,14 +1,13 @@
 <template>
   <div class="top">
     <div class="content">
-      Aizu Geek Dojo では以下のものを備品として揃えています。
+      <h2>備品リスト</h2>
+      <p>Aizu Geek Dojo では以下のものを備品として揃えています。</p>
       <ul class="items">
         <li
           v-for="item in items"
           :key="item"
-          class="item">
-          <p>{{ item }}</p>
-        </li>
+          class="item">{{ item }}</li>
       </ul>
     </div>
   </div>
@@ -39,20 +38,18 @@ export default {
 @import '../style/color';
 
 .content {
-  .items {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
+  ul {
+    width: 100%;
+    list-style-type: none;
+    li:before {
+      content: '◆ ';
+      font-size: xx-small;
+      padding-right: 8px;
+      color: $lastColor2;
+    }
     li {
-      display: inline-block;
+      padding-bottom: 0.5em;
     }
   }
-}
-p {
-  color: black;
-  border: solid 3px #00a5b1;
-  padding: 0.5em;
-  border-radius: 0.5em;
 }
 </style>

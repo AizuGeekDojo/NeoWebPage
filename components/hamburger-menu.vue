@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .hamburger-menu {
-  margin-right: 10px;
+  margin-right: 15px;
   .hamburger,
   .hamburger span {
     display: inline-block;

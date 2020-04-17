@@ -22,14 +22,16 @@ export default {
 .box {
   padding: 0;
   margin: 0 auto;
+  width: 100%;
 
   .box-title {
     color: $fontColorWhite;
-    font-size: 30px;
-    background-color: $mainColor1;
+    font-size: 20px;
+    background-color: $lastColor2;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    padding: 10px;
+    padding: 8px 15px;
+    text-indent: 5px each-line;
   }
 
   .box-content {
