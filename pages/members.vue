@@ -48,6 +48,30 @@ export default {
     return {
       members: [
         {
+          name: '木伏徹',
+          status: 'ob',
+          picture_path: require('@/assets/images/member/kibushi.jpg'),
+          detail: '通算ふたりめのGeek Dojo SA。仕事を作る仕事してる。',
+          like: 'Spartan Sprint Finisher, ブルベ, Jitaku Self Difence force',
+          links: [
+            {
+              src: 'https://www.facebook.com/s1170230',
+              prefix: 'fab',
+              icon: 'facebook'
+            },
+            {
+              src: 'https://note.com/kibutan',
+              prefix: 'fas',
+              icon: 'blog'
+            },
+            {
+              src: 'https://www.resume.id/kibutan',
+              prefix: 'fas',
+              icon: 'blog'
+            }
+          ]
+        },
+        {
           name: '森本望',
           status: 'ob',
           picture_path: require('@/assets/images/member/nozomoto.jpg'),
