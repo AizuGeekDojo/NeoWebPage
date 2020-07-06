@@ -7,13 +7,13 @@
           <p>
             新型コロナウイルス感染対策の一環としてGeek Dojoの利用についても感染対策措置を講じることとします。<br/>
             詳細については下記の資料をご覧ください。<br/>
-            <a href="../AizuGeekDojoResToCOVID19.pdf">Aizu Geek Dojoの利用について</a><br/>
-            2020年05月18日: 学校の再開に合わせ資料を更新しました。<br/>
+            <a href="../AizuGeekDojoResToCoViD19_20200617M_JA.pdf">Aizu Geek Dojoの利用について</a><br/>
+            2020年07月06日: 資料を更新しました。<br/>
             <br/>
             We will take a countermeasure for the infection in Aizu Geek Dojo as a part of University’s action of COVID-19.<br/>
             Please see the following material for details.<br/>
-            <a href="../AizuGeekDojoResToCOVID19en.pdf">Use of Aizu Geek Dojo</a><br/>
-            May 18, 2020: Materials updated to coincide with school's reopening.<br/>
+            <a href="../AizuGeekDojoResToCoViD19_20200617M_EN.pdf">Use of Aizu Geek Dojo</a><br/>
+            July 6, 2020: Materials updated.<br/>
           </p>
         </div>
       </div>
