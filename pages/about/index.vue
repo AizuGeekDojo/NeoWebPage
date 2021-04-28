@@ -2,6 +2,15 @@
   <div class="top">
     <div class="content">
       <h2>AizuGeekDojoについて</h2>
+      <div style="width: 90%">
+        <script
+          async
+          class="
+        speakerdeck-embed"
+          data-id="8c7c3dbcbfb348aab9b89af3cbdf2ce3"
+          data-ratio="1.77777777777778"
+          src="//speakerdeck.com/assets/embed.js"></script>
+      </div>
       <p>Aizu Geek Dojo は、会津大学生のためのものづくりスペースです。
       ものづくりのための設備と備品がそろっています。
       開室時間中は、機器の使用に詳しい SA/TA が設備および備品の使用方法を指導します。
