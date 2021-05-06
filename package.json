@@ -8,7 +8,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "yarn processmd && nuxt generate",
+    "generate": "npm run processmd && nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "processmd": "rm -f ./blog/*.json && processmd ./blog/* --stdout --outputDir ./blog/ > ./blog/summary.json",
