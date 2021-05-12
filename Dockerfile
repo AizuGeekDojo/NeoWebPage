@@ -3,4 +3,4 @@ FROM node:${VARIANT}
 
 WORKDIR /code
 
-RUN cd /code && yarn install
+RUN yarn install
