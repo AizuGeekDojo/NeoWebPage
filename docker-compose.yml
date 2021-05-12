@@ -1,0 +1,9 @@
+version: '3'
+services:
+  geek_web:
+    build: ./
+    image: geek_web
+    container_name: geek_web-1
+    stdin_open: true
+    volumes:
+      - ./:/code
