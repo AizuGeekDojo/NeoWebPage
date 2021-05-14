@@ -17,7 +17,7 @@
             <a
               href="../AizuGeekDojoResToCoViD19_20210510M_EN.pdf"
               target="_blank">Use of Aizu Geek Dojo</a><br/>
-            July 6, 2020: Materials updated.<br/>
+            May 10, 2021: Materials updated.<br/>
           </p>
         </div>
       </div>
