@@ -10,7 +10,7 @@
             <a
               href="../AizuGeekDojoResToCoViD19_20210510M_JA.pdf"
               target="_blank">Aizu Geek Dojoの利用について</a><br/>
-            2020年07月06日: 資料を更新しました。<br/>
+            2021年5月10日: 資料を更新しました。<br/>
             <br/>
             We will take a countermeasure for the infection in Aizu Geek Dojo as a part of University’s action of COVID-19.<br/>
             Please see the following material for details.<br/>
