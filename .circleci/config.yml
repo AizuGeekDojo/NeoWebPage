@@ -16,11 +16,11 @@ jobs:
 
       - run:
           name: Install Dependency
-          command: yarn
+          command: npm ci
 
       - run:
           name: Build
-          command: yarn generate
+          command: npm run generate
 
       - save_cache:
           key: npm-{{ checksum "package-lock.json" }}
