@@ -49,7 +49,9 @@ export default {
 }
 
 @media (max-width: 600px) {
-  grid-template-columns: 70% 30%;
+  .article-board {
+    grid-template-columns: 70% 30%;
+  }
 
   .article-title {
     display: flex;
