@@ -97,7 +97,19 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    vendor: ['external_library']
+    vendor: ['external_library'],
+    postcss: {
+      plugins: {
+        'postcss-import': {},
+        'postcss-url': {},
+        'postcss-preset-env': this.preset,
+        'cssnano': { preset: 'default' } // 開発モードでは無効化されています
+      },
+      order: 'presetEnvAndCssnanoLast',
+      preset: {
+        stage: 2
+      }
+    }
   },
 
   fontawesome: {
