@@ -133,6 +133,10 @@ export default {
       height: auto;
       text-align: left;
 
+      /deep/ img {
+        width: 100%;
+      }
+
       @media (max-width: 600px) {
         line-height: normal;
         /deep/ h1 {
