@@ -133,71 +133,71 @@ export default {
       height: auto;
       text-align: left;
 
-      /deep/ img {
+      ::v-deep img {
         width: 100%;
       }
 
       @media (max-width: 600px) {
         line-height: normal;
-        /deep/ h1 {
+        ::v-deep h1 {
           font-size: 25px;
         }
-        /deep/ h2 {
+        ::v-deep h2 {
           font-size: 23px;
         }
-        /deep/ h3 {
+        ::v-deep h3 {
           font-size: 20px;
         }
-        /deep/ h4 {
+        ::v-deep h4 {
           font-size: 18px;
         }
       }
 
       @media (min-width: 600px) {
         line-height: inherit;
-        /deep/ h1 {
+        ::v-deep h1 {
           font-size: 30px;
         }
-        /deep/ h2 {
+        ::v-deep h2 {
           font-size: 28px;
         }
-        /deep/ h3 {
+        ::v-deep h3 {
           font-size: 25px;
         }
-        /deep/ h4 {
+        ::v-deep h4 {
           font-size: 22px;
         }
 
-        /deep/ pre {
+        ::v-deep pre {
           font-size: 14px;
         }
       }
 
-      /deep/ h1 {
+      ::v-deep h1 {
         padding: 0.5em;
         background: white;
         border-left: solid 5px #ffaf58;
       }
 
-      /deep/ h2 {
+      ::v-deep h2 {
         padding: 0.5em;
         background: white;
         border-left: solid 5px #59fcff;
       }
 
-      /deep/ h3 {
+      ::v-deep h3 {
         padding: 0.5em;
         background: white;
         border-left: solid 5px #fcff59;
       }
 
-      /deep/ h4 {
+      ::v-deep h4 {
         padding: 0.5em;
         background: white;
         border-left: solid 5px #fc59ff;
       }
 
-      /deep/ pre {
+      ::v-deep pre {
         background-color: rgba(50, 50, 50, 0.1);
         margin-right: 20px;
         margin-left: 20px;

@@ -97,18 +97,19 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
+    vendor: ['external_library'],
+    postcss: {
+      plugins: {
+        'postcss-import': {},
+        'postcss-url': {},
+        'postcss-preset-env': this.preset,
+        'cssnano': { preset: 'default' } // 開発モードでは無効化されています
+      },
+      order: 'presetEnvAndCssnanoLast',
+      preset: {
+        stage: 2
       }
-    },
-    vendor: ['external_library']
+    }
   },
 
   fontawesome: {

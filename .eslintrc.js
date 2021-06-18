@@ -9,7 +9,7 @@ module.exports = {
   },
   extends: ['plugin:vue/recommended', 'plugin:prettier/recommended'],
   // required to lint *.vue files
-  plugins: ['vue', 'prettier'],
+  plugins: ['vue', 'prettier', new ESLintPlugin(options)],
   // add your custom rules here
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',

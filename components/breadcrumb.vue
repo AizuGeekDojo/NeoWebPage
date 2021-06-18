@@ -87,12 +87,12 @@ export default {
     margin: 0 10px;
   }
 }
-/deep/ a,
+::v-deep a,
 a:visited {
   color: $fontColor;
   text-decoration: none;
 }
-/deep/ span {
+::v-deep span {
   a,
   a:visited {
     color: $fontColor;
