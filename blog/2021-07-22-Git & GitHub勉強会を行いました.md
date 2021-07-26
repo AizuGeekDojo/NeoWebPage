@@ -11,7 +11,7 @@ writer: namiki
 
 ## Git & GitHub勉強会を行いました
 
-今年もAizu Geek Dojoに新しくSAが入ってきましたが、SAの技術力向上とSA業務の効率化を目指し、今回SA向けにGitとGitHubの使い方を教える勉強会を行いました。
+今年もAizu Geek Dojoに新しくSAが入ってきましたが、SAの技術力向上とSA業務の効率化を目指し、今回SA向けに自分が講師となってGitとGitHubの使い方を教える勉強会を行いました。
 ![勉強会の様子](https://imgur.com/XlkoA4H.jpg)
 
 ## 勉強会の内容
