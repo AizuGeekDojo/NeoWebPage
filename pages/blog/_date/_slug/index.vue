@@ -97,7 +97,8 @@ export default {
   @media (min-width: 600px) {
   }
   .article-content {
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     @media (max-width: 600px) {
       width: 100%;
     }
