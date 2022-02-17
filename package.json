@@ -26,7 +26,7 @@
     "markdown-it-highlight": "^0.2.0",
     "markdown-it-meta": "^0.0.1",
     "markdown-it-table-of-contents": "^0.5.2",
-    "next": "^11.0.0",
+    "next": "^12.1.0",
     "nuxt": "^2.15.7",
     "postcss-hexrgba": "^2.0.1",
     "postcss-nested": "^5.0.5",
