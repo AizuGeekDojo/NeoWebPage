@@ -18,7 +18,7 @@
         @click.native="close_menu">About</nuxt-link>
       <nuxt-link
         to="/opentime"
-        @click.native="close_menu">開室日程</nuxt-link>
+        @click.native="close_menu">予約状況</nuxt-link>
       <nuxt-link
         to="/product"
         @click.native="close_menu">制作物</nuxt-link>
