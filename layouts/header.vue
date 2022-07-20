@@ -38,7 +38,7 @@
           <nuxt-link to="/about">ABOUT</nuxt-link>
         </div>
         <div class="header-secondbar-link">
-          <nuxt-link to="/opentime">開室日程</nuxt-link>
+          <nuxt-link to="/opentime">予約状況</nuxt-link>
         </div>
         <div class="header-secondbar-link">
           <nuxt-link to="/product">制作物</nuxt-link>
