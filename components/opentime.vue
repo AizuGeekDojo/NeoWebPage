@@ -1,26 +1,29 @@
 <template>
   <div class="top">
     <div class="content">
-      <h2>予約状況</h2>
-      <p>Aizu Geek Dojoは予約優先です。空いていれば予約がなくても利用できます。予約フォームはこちら。</p>
-      <ul>
-        <li>
-          学生:
-          <a
-            href="https://forms.gle/dto324JWUpftKAWZ8"
-            target="_blank"
-            rel="noopener noreferrer"
-          >https://forms.gle/dto324JWUpftKAWZ8</a>
-        </li>
-        <li>
-          教職員その他:
-          <a
-            href="https://forms.gle/CAgBXhhDxMbJSL9f7"
-            target="_blank"
-            rel="noopener noreferrer"
-          >https://forms.gle/CAgBXhhDxMbJSL9f7</a>
-        </li>
-      </ul>
+      <h2>予約状況 / Reservation Calendar</h2>
+      <p>
+        Aizu Geek Dojoは予約優先です。空いていれば予約がなくても利用できます。予約フォームはこちら。<br>
+        You can reserve areas and devices via the Reservation Form. Aizu Geek Dojo has priority for reservations. If
+        there is no reservation, it can be used without a reservation. The Reservation Form is below.</p>
+      <div class="grid-container">
+        <span>
+          ・学生 / Students:
+        </span>
+        <a
+          href="https://forms.gle/dto324JWUpftKAWZ8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://forms.gle/dto324JWUpftKAWZ8</a>
+        <span>
+          ・教職員その他 / Faculty, staff, and others:
+        </span>
+        <a
+          href="https://forms.gle/CAgBXhhDxMbJSL9f7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >https://forms.gle/CAgBXhhDxMbJSL9f7</a>
+      </div>
       <div class="opentime-calender">
         <div class="gc_wrapper">
           <div class="responsive-iframe-container big-container">
@@ -41,13 +44,20 @@
 
 <style lang="scss" scoped>
 @import '../style/color';
+
 .opentime-calender {
   padding: 0;
   position: relative;
   width: 100%;
   height: auto;
 }
-ul {
-  list-style: disc !important;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin: 20px
 }
 </style>
+<script>
+</script>
